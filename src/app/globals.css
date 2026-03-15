@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap");
+@import "tailwindcss";
+
+/* ── Display font (Luxury — kept for fallback) ── */
+@font-face {
+  font-family: "Luxury";
+  src: url("/fonts/luxury.otf") format("opentype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Display font (Bulagria) ── */
+@font-face {
+  font-family: "Bulagria";
+  src: url("/fonts/Bulagria.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Arabic font (Scheherazade New — full harakat support, via Google Fonts) ── */
+
+:root {
+  --night:      #080808;
+  --navy:       #0a0a0a;
+  --navy-mid:   #111111;
+  --gold:       #c9a84c;
+  --gold-light: #e8c96e;
+  --gold-pale:  #f5e8b8;
+  --gold-dim:   #8b6914;
+  --cream:      #f2ede4;
+  --teal:       #2e2e2e;
+  --teal-light: #484848;
+  --text-body:  #ccc4b4;
+  --text-dim:   #8a8070;
+
+  --font-display: "Bulagria", "Luxury", Georgia, serif;
+  --font-body:    var(--font-montserrat), sans-serif;
+  --font-arabic:  "Scheherazade New", serif;
+}
+
+@theme inline {
+  --color-background:  var(--night);
+  --color-foreground:  var(--cream);
+  --color-night:       var(--night);
+  --color-navy:        var(--navy);
+  --color-navy-mid:    var(--navy-mid);
+  --color-gold:        var(--gold);
+  --color-gold-light:  var(--gold-light);
+  --color-gold-pale:   var(--gold-pale);
+  --color-gold-dim:    var(--gold-dim);
+  --color-cream:       var(--cream);
+  --color-teal:        var(--teal);
+  --color-teal-light:  var(--teal-light);
+  --color-muted:       var(--text-body);
+  --color-dim:         var(--text-dim);
+  --font-sans:         var(--font-montserrat), sans-serif;
+  --font-display:      "Bulagria", "Luxury", Georgia, serif;
+  --font-body:         var(--font-montserrat), sans-serif;
+  --font-arabic:       "Scheherazade New", serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--night);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── Geometric Islamic pattern ── */
+.pattern-geo {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-width='0.5' opacity='0.12'%3E%3Cpolygon points='40,4 52,28 78,28 58,44 66,70 40,56 14,70 22,44 2,28 28,28'/%3E%3Crect x='20' y='20' width='40' height='40' transform='rotate(45 40 40)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ── Fade-up reveal (CSS-only, no JS required) ── */
+@keyframes reveal-in {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  animation: reveal-in 0.75s cubic-bezier(0.16,1,0.3,1) both;
+}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.35s; }
+.delay-4 { animation-delay: 0.5s; }
+.delay-5 { animation-delay: 0.65s; }
+.delay-6 { animation-delay: 0.8s; }
+
+/* ── Gold divider ── */
+.gold-rule {
+  width: 64px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* ── Section glow borders (top/bottom, glows center, fades to sides) ── */
+.glow-border-top {
+  position: relative;
+}
+.glow-border-top::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.glow-border-bottom {
+  position: relative;
+}
+.glow-border-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* ── Section headings ── */
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.section-title {
+  font-family: "Bulagria", "Luxury", Georgia, serif;
+  color: var(--cream);
+  line-height: 1.15;
+}
+
+/* ── Card ── */
+.ahic-card {
+  --start: 0;
+  --active: 0;
+  --spread: 20;
+  --glow-x: 50%;
+  --glow-y: 50%;
+  position: relative;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,168,76,0.12);
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  isolation: isolate;
+}
+
+/* Background glow — controlled via CSS vars set by GlowCards.js */
+.ahic-card::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at var(--glow-x, 50%) var(--glow-y, 50%),
+    rgba(201,168,76,0.13) 0px,
+    rgba(201,168,76,0.05) 70px,
+    transparent 140px
+  );
+  opacity: var(--glow-opacity, 0);
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+/* Border glow — follows cursor along the border ring */
+.ahic-card::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  border-radius: inherit;
+  inset: -1px;
+  padding: 1px;
+  background: radial-gradient(
+    circle at var(--glow-x, 50%) var(--glow-y, 50%),
+    rgba(232,201,110,1) 0px,
+    rgba(201,168,76,0.8) 15px,
+    rgba(201,168,76,0.35) 50px,
+    transparent 100px
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: var(--glow-opacity, 0);
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.ahic-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Reset stacking for card children */
+.ahic-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Gold button ── */
+.btn-gold {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--night);
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  padding: 0.875rem 2.5rem;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-gold:hover {
+  opacity: 0.88;
+  box-shadow: 0 8px 32px rgba(201,168,76,0.35);
+}
+
+/* ── Ghost button ── */
+.btn-ghost {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  background: transparent;
+  padding: 0.875rem 2.5rem;
+  border-radius: 2px;
+  border: 1px solid rgba(201,168,76,0.4);
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-ghost:hover {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.07);
+}
+
+/* ── Asset_7 tiled background ── */
+.asset7-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-image: url("/svg/Asset_7.svg");
+  background-size: 1000px 1000px;
+  background-repeat: repeat;
+  opacity: 0.03;
+  /* shift hue away from gold so pattern is distinct from UI elements */
+  filter: hue-rotate(190deg) saturate(0.6) brightness(1.4);
+  pointer-events: none;
+}
+
+/* ── Grain overlay ── */
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  z-index: 9999;
+}
+
+/* ── Timeline ── */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--gold-dim), var(--gold), var(--gold-dim), transparent);
+  transform: translateX(-50%);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 2.25rem;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 3px solid var(--night);
+  outline: 1px solid var(--gold);
+  z-index: 1;
+}
+
+/* ── Marquee ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 28s linear infinite;
+  display: flex;
+  gap: 0;
+  white-space: nowrap;
+  width: max-content;
+}
+
+/* ── Hero glow ── */
+.hero-glow {
+  background: radial-gradient(
+    ellipse 60% 55% at 50% 55%,
+    rgba(201,168,76,0.14) 0%,
+    rgba(201,168,76,0.05) 40%,
+    transparent 70%
+  );
+}
+
+/* ── Responsive utilities ── */
+@media (max-width: 768px) {
+  .col-1-mobile {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+  .gap-wrap {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+}
+
+/* ── Platform showcase 3D (hero-section-9 style) ── */
+.platform-showcase-wrap {
+  max-width: 1792px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.platform-showcase-inner {
+  perspective: 1200px;
+  mask-image: linear-gradient(to right, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 100%);
+  margin-right: -4rem;
+  padding-left: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .platform-showcase-inner {
+    margin-right: -14rem;
+    padding-left: 14rem;
+  }
+}
+
+.platform-showcase-skew {
+  position: relative;
+  transform: skewX(0.36rad);
+  min-height: 300px;
+}
+
+@media (min-width: 1024px) {
+  .platform-showcase-skew {
+    min-height: 500px;
+  }
+}
+
+/* ── Page header gradient blobs ── */
+.page-header-blobs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.page-header-blob-1 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -200px;
+  left: -150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 70%);
+}
+.page-header-blob-2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  right: -100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+}
+
