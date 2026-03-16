@@ -552,7 +552,7 @@ export default function Courses() {
                             Enroll Your Child Today
                         </h2>
                         <p style={{ color: "var(--text-body)", lineHeight: 1.95, marginBottom: "2rem", fontSize: "1rem", maxWidth: "580px", margin: "0 auto 2.25rem" }}>
-                            Fill in our enrollment form and we&apos;ll reach out within 48 hours \u2014 or contact us directly
+                            Fill in our enrollment form and we&apos;ll reach out within 48 hours or contact us directly
                             on WhatsApp for an immediate response. Classes are available online (and offline locally),
                             for students aged 4 to 25.
                         </p>
