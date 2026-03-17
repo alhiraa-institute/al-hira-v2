@@ -234,8 +234,8 @@ function Features() {
 /* ── Timeline preview ── */
 const TIMELINE_PREVIEW = [
   { year: "2021", icon: "🕊️", title: "Humble Beginnings", text: "Started with home tuitions, teaching 3–5 students with a vision to build a structured Islamic learning space" },
-  { year: "2023", icon: "🏫", title: "Foundation Established", text: "On November 6, 2023 (8/4/1445 Hijri), we marked a milestone with the establishment of our Centre (AHIC)" },
-  { year: "2026", icon: "🎯", title: "Digital Excellence", text: "Qirat Department, Calligraphy classes, online LMS platform and official website all launched" },
+  { year: "2023", icon: "🏫", title: "Foundation Established", text: "On November 6, 2023 (21/4/1445 Hijri), we marked a milestone with the establishment of our Centre (AHIC)" },
+  { year: "2026", icon: "🎯", title: "Digital Excellence", text: "Online LMS platform-Suffah and official website launched" },
 ];
 
 function TimelinePreview() {

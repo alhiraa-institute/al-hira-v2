@@ -67,7 +67,7 @@ export default function About() {
                         <strong style={{ color: "var(--cream)" }}>Al Hiraa Islamic Coaching Centre (AHIC)</strong> is a dedicated Islamic educational institution committed to nurturing faith, knowledge, and strong moral character among school and college students aged 4 to 25 years.
                     </p>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", maxWidth: "740px", margin: "0 auto" }}>
-                        What began as a humble initiative of home tuitions grew over more than two years into a structured Centre for Islamic learning. On <strong style={{ color: "var(--cream)" }}>6 November 2023 (8/4/1445 Hijri)</strong>, we marked a milestone with the formal establishment of AHIC  and have been growing steadily ever since, alhamdulillah.
+                        What began as a humble initiative of home tuitions grew over more than two years into a structured Centre for Islamic learning. On <strong style={{ color: "var(--cream)" }}>6 November 2023 (21/4/1445 Hijri)</strong>, we marked a milestone with the formal establishment of AHIC  and have been growing steadily ever since, alhamdulillah.
                     </p>
                 </div>
 
@@ -193,7 +193,7 @@ export default function About() {
                         <Link href="/join" className="btn-ghost">Enroll Now</Link>
                     </div>
                     <a href={whatsappLink} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-body)", fontSize: ".8rem", color: "var(--text-dim)", textDecoration: "none", letterSpacing: ".05em", transition: "color .2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "var(--gold)"} onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-dim)"}>
-                        WhatsApp: +91 91874 18343  Instagram: @ahicsuffah
+                        WhatsApp: +91 91874 18343 &nbsp; 📸 Instagram: @ahicsuffah
                     </a>
                 </div>
             </section>

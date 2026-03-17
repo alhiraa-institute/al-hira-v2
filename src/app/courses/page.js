@@ -173,8 +173,7 @@ const COURSES = [
         details: [
             { label: "Duration", value: "12-15 months" },
             { label: "Students per Batch", value: "4-6" },
-            { label: "Weekdays", value: "20 mins / session" },
-            { label: "Weekends", value: "30 mins / session" }
+            { label: "Weekdays or Weekends", value: "20 mins or 30 mins / session" }
         ],
         ageGroup: "Ages 11+",
         level: "Beginner",
@@ -589,7 +588,7 @@ export default function Courses() {
                                 onMouseEnter={(e) => e.currentTarget.style.color = "var(--gold)"}
                                 onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-dim)"}
                             >
-                                Instagram: @ahicsuffah
+                                📸 Instagram: @ahicsuffah
                             </a>
                         </div>
                     </div>

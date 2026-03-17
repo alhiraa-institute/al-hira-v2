@@ -122,7 +122,7 @@ export default function Footer() {
                         <a href="https://instagram.com/ahicsuffah" target="_blank" rel="noopener noreferrer" style={colLink}
                             onMouseEnter={(e) => e.currentTarget.style.color = "var(--gold)"}
                             onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-dim)"}>
-                            @ahicsuffah
+                            📸 @ahicsuffah
                         </a>
                     </div>
 
