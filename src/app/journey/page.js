@@ -142,9 +142,9 @@ export default function Journey() {
                 <div className="timeline-line" />
                 <div style={{ display: "flex", flexDirection: "column", gap: "3.5rem" }}>
                     {TIMELINE.map((item, i) => (
-                        <div key={item.year} className={`reveal delay-${(i % 4) + 1}`} style={{ display: "flex", justifyContent: item.side === "right" ? "flex-end" : "flex-start", position: "relative" }}>
+                        <div key={item.year} className={`timeline-row timeline-row-${item.side} reveal delay-${(i % 4) + 1}`}>
                             <div className="timeline-dot" />
-                            <div className="ahic-card" style={{ maxWidth: "500px", width: "calc(50% - 2.5rem)", padding: "2rem 1.75rem", backdropFilter: "blur(4px)" }}>
+                            <div className="ahic-card timeline-card" style={{ padding: "2rem 1.75rem", backdropFilter: "blur(4px)" }}>
                                 <div style={{ display: "flex", alignItems: "center", gap: ".75rem", marginBottom: ".6rem", flexWrap: "wrap" }}>
                                     <span style={{ fontFamily: '"Luxury", Georgia, serif', fontSize: ".65rem", fontWeight: 600, letterSpacing: ".1em", textTransform: "uppercase", color: "var(--gold)", background: "rgba(201,168,76,.1)", padding: ".25rem .65rem", borderRadius: "99px" }}>{item.year}</span>
                                     <span style={{ fontSize: ".72rem", color: "var(--text-dim)", letterSpacing: ".06em", textTransform: "uppercase" }}>{item.label}</span>
