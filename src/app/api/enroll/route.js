@@ -77,6 +77,11 @@ export async function POST(request) {
         </div>
     `;
 
+    if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
+        console.error("Missing GMAIL_USER or GMAIL_APP_PASSWORD env vars");
+        return Response.json({ error: "Server email configuration is missing." }, { status: 500 });
+    }
+
     try {
         await transporter.sendMail({
             from: `"Al Hiraa Enrollment" <${process.env.GMAIL_USER}>`,
@@ -86,9 +91,10 @@ export async function POST(request) {
             html,
         });
 
+        transporter.close();
         return Response.json({ success: true });
     } catch (err) {
-        console.error("Email send error:", err);
+        console.error("Email send error:", err.message, err.code);
         return Response.json({ error: "Failed to send email. Please try again later." }, { status: 500 });
     }
 }
