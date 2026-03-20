@@ -36,10 +36,30 @@ export default function Join() {
     useReveal();
     const [form, setForm] = useState({ name: "", age: "", email: "", phone: "", program: "", message: "" });
     const [sent, setSent] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
     const [open, setOpen] = useState(null);
 
     function handleChange(e) { setForm({ ...form, [e.target.name]: e.target.value }); }
-    function handleSubmit(e) { e.preventDefault(); setSent(true); }
+    async function handleSubmit(e) {
+        e.preventDefault();
+        setLoading(true);
+        setError("");
+        try {
+            const res = await fetch("/api/enroll", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(form),
+            });
+            const data = await res.json();
+            if (!res.ok) throw new Error(data.error || "Something went wrong.");
+            setSent(true);
+        } catch (err) {
+            setError(err.message);
+        } finally {
+            setLoading(false);
+        }
+    }
 
     const inputStyle = {
         width: "100%", background: "rgba(201,168,76,.05)",
@@ -121,7 +141,12 @@ export default function Join() {
                                     onBlur={(e) => e.target.style.borderColor = "rgba(201,168,76,.2)"}
                                 />
                             </div>
-                            <button type="submit" className="btn-gold" style={{ marginTop: ".5rem" }}>Submit Inquiry</button>
+                            {error && (
+                                <p style={{ fontSize: ".85rem", color: "#e57373", margin: 0 }}>{error}</p>
+                            )}
+                            <button type="submit" className="btn-gold" style={{ marginTop: ".5rem" }} disabled={loading}>
+                                {loading ? "Sending…" : "Submit Inquiry"}
+                            </button>
                         </form>
                     )}
                 </div>
