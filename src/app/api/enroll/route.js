@@ -1,5 +1,7 @@
 import nodemailer from "nodemailer";
 
+export const runtime = "nodejs";
+
 const ALLOWED_PROGRAMS = ["tajweed", "tarteel", "recitation", "hifz", "arabic", "upcoming", ""];
 
 function sanitize(str) {
