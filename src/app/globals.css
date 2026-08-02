@@ -22,37 +22,37 @@
 /* ── Arabic font (Scheherazade New — full harakat support, via Google Fonts) ── */
 
 :root {
-  --night:      #def1ed; /* Main background — soft mint */
-  --navy:       #f2faf8; /* Card/Nav backgrounds — lighter mint */
-  --navy-mid:   #c8e8e2; /* Soft mint-teal accent */
-  --gold:       #b3923b; /* Gold with high contrast on mint backgrounds */
-  --gold-light: #c9a84c; /* Lighter gold accent */
+  --night:      #faf6ee; /* Main background — warm cream */
+  --navy:       #ffffff; /* Card/Nav — pure white */
+  --navy-mid:   #f2e8d5; /* Warm cream accent */
+  --gold:       #b3923b; /* Gold — high contrast on cream */
+  --gold-light: #c9a84c; /* Lighter gold */
   --gold-pale:  #e0d2ad; /* Muted pale gold */
-  --gold-dim:   #755a1a; /* Dark gold for text highlights */
-  --cream:      #0d1f1d; /* Dark text — deep teal-black */
-  --teal:       #c8e8e2; /* Teal accent surface */
-  --teal-light: #b0d8d2; /* Slightly deeper teal accent */
-  --text-body:  #1a2e2b; /* Primary dark text — deep teal */
-  --text-dim:   #4a6b65; /* Muted teal-grey text */
-  --bg-light:   #def1ed;
+  --gold-dim:   #755a1a; /* Dark gold */
+  --cream:      #1a1208; /* Dark text — rich warm black */
+  --teal:       #f2e8d5; /* Warm accent surface */
+  --teal-light: #e8dcc4; /* Deeper warm accent */
+  --text-body:  #2a1f0e; /* Primary dark text — warm brown-black */
+  --text-dim:   #6b5a3e; /* Muted warm text */
+  --bg-light:   #faf6ee;
 
   /* Theme-specific layout background variables */
-  --nav-bg: rgba(222, 241, 237, 0.6);
-  --nav-bg-scrolled: rgba(222, 241, 237, 0.96);
-  --nav-mobile-bg: rgba(222, 241, 237, 0.98);
+  --nav-bg: rgba(250, 246, 238, 0.65);
+  --nav-bg-scrolled: rgba(250, 246, 238, 0.97);
+  --nav-mobile-bg: rgba(250, 246, 238, 0.99);
   --nav-border: rgba(179, 146, 59, 0.22);
   --nav-border-dashed: rgba(179, 146, 59, 0.12);
 
-  --footer-bg: rgba(210, 235, 230, 0.97);
-  --border-gold-alpha: rgba(179, 146, 59, 0.12);
-  --border-gold-alpha-heavy: rgba(179, 146, 59, 0.22);
+  --footer-bg: rgba(245, 240, 228, 0.97);
+  --border-gold-alpha: rgba(179, 146, 59, 0.14);
+  --border-gold-alpha-heavy: rgba(179, 146, 59, 0.25);
 
-  --section-bg: rgba(200, 232, 226, 0.55);
+  --section-bg: rgba(242, 232, 213, 0.45);
 
-  --header-gradient-start: rgba(222, 241, 237, 0.85);
-  --header-gradient-end: rgba(200, 232, 226, 0.5);
+  --header-gradient-start: rgba(250, 246, 238, 0.88);
+  --header-gradient-end: rgba(242, 232, 213, 0.5);
 
-  --select-bg: rgba(200, 232, 226, 0.95);
+  --select-bg: rgba(242, 232, 213, 0.95);
 
   --font-display: "Bulagria", "Luxury", Georgia, serif;
   --font-body:    var(--font-montserrat), sans-serif;
