@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -45,12 +45,12 @@ export default function Nav() {
                 padding: "0 2rem",
                 height: "72px",
                 display: "flex", alignItems: "center", justifyContent: "space-between",
-                background: scrolled ? "rgba(8,8,8,0.96)" : "rgba(8,8,8,0.6)",
+                background: scrolled ? "var(--nav-bg-scrolled)" : "var(--nav-bg)",
                 backdropFilter: "blur(16px)",
                 WebkitBackdropFilter: "blur(16px)",
                 borderBottom: scrolled
-                    ? "1px solid rgba(201,168,76,0.22)"
-                    : "1px dashed rgba(201,168,76,0.12)",
+                    ? "1px solid var(--nav-border)"
+                    : "1px dashed var(--nav-border-dashed)",
                 transition: "all 0.4s ease",
             }}
         >
@@ -148,8 +148,8 @@ export default function Nav() {
             {open && (
                 <div style={{
                     position: "fixed", top: 72, left: 0, right: 0,
-                    background: "rgba(8,8,8,0.98)",
-                    borderBottom: "1px solid rgba(201,168,76,0.18)",
+                    background: "var(--nav-mobile-bg)",
+                    borderBottom: "1px solid var(--nav-border)",
                     padding: "1.5rem 2rem", zIndex: 99,
                     backdropFilter: "blur(20px)",
                     WebkitBackdropFilter: "blur(20px)",

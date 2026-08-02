@@ -33,12 +33,11 @@ const PLATFORM = [
 
 export default function About() {
     useReveal();
-    const whatsappLink = "https://wa.me/919187418343?text=Assalamu%20Alaikum%2C%20I%27m%20interested%20in%20enrolling%20at%20Al%20Hiraa%20Islamic%20Coaching%20Centre.";
     return (
         <div style={{ position: "relative", zIndex: 1 }}>
 
             {/* Page Header */}
-            <div className="glow-border-bottom" style={{ position: "relative", zIndex: 1, paddingTop: "9rem", paddingBottom: "3rem", textAlign: "center", background: "linear-gradient(to bottom,rgba(7,9,15,.85) 0%,rgba(10,10,10,.5) 100%)", backdropFilter: "blur(8px)", overflow: "hidden" }}>
+            <div className="glow-border-bottom" style={{ position: "relative", zIndex: 1, paddingTop: "9rem", paddingBottom: "3rem", textAlign: "center", background: "linear-gradient(to bottom, var(--header-gradient-start) 0%, var(--header-gradient-end) 100%)", backdropFilter: "blur(8px)", overflow: "hidden" }}>
                 <div className="page-header-blobs" aria-hidden>
                     <div className="page-header-blob-1" />
                     <div className="page-header-blob-2" />
@@ -94,7 +93,7 @@ export default function About() {
             </section>
 
             {/* Logo Meaning */}
-            <section className="glow-border-top glow-border-bottom" style={{ padding: "5rem 1.5rem", background: "rgba(10,10,10,.55)", backdropFilter: "blur(6px)" }}>
+            <section className="glow-border-top glow-border-bottom" style={{ padding: "5rem 1.5rem", background: "var(--section-bg)", backdropFilter: "blur(6px)" }}>
                 <div style={{ maxWidth: "860px", margin: "0 auto" }}>
                     <div className="reveal" style={{ textAlign: "center", marginBottom: "2.5rem" }}>
                         <p className="section-label" style={{ marginBottom: ".75rem" }}>The Meaning Behind Our Mark</p>
@@ -142,7 +141,7 @@ export default function About() {
             </section>
 
             {/* Platform Section */}
-            <section className="glow-border-top glow-border-bottom" style={{ padding: "6rem 1.5rem", background: "rgba(10,10,10,.55)", backdropFilter: "blur(6px)" }}>
+            <section className="glow-border-top glow-border-bottom" style={{ padding: "6rem 1.5rem", background: "var(--section-bg)", backdropFilter: "blur(6px)" }}>
                 <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
                     <div className="reveal" style={{ textAlign: "center", marginBottom: "3.5rem" }}>
                         <p className="section-label" style={{ marginBottom: ".75rem" }}>How Learning Is Delivered</p>
@@ -186,14 +185,14 @@ export default function About() {
                         Join the Al Hiraa Family
                     </h2>
                     <p style={{ color: "var(--text-body)", lineHeight: 1.95, marginBottom: "2.25rem", fontSize: "1rem" }}>
-                        Explore our five active courses, fill in the enrollment form, or reach out directly on WhatsApp for an immediate response. Classes are open to students aged 4 to 25, online worldwide and offline in Mysuru.
+                        Explore our five active courses or fill in the enrollment form to get started. Classes are open to students aged 4 to 25, online worldwide and offline in Mysuru.
                     </p>
                     <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap", marginBottom: "1.5rem" }}>
                         <Link href="/courses" className="btn-gold">View Our Courses</Link>
                         <Link href="/join" className="btn-ghost">Enroll Now</Link>
                     </div>
-                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-body)", fontSize: ".8rem", color: "var(--text-dim)", textDecoration: "none", letterSpacing: ".05em", transition: "color .2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "var(--gold)"} onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-dim)"}>
-                        WhatsApp: +91 91874 18343 &nbsp; 📸 Instagram: @ahicsuffah
+                    <a href="https://instagram.com/ahicsuffah" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-body)", fontSize: ".8rem", color: "var(--text-dim)", textDecoration: "none", letterSpacing: ".05em", transition: "color .2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "var(--gold)"} onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-dim)"}>
+                        📸 Instagram: @ahicsuffah
                     </a>
                 </div>
             </section>

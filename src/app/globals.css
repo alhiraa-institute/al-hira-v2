@@ -22,18 +22,37 @@
 /* ── Arabic font (Scheherazade New — full harakat support, via Google Fonts) ── */
 
 :root {
-  --night:      #080808;
-  --navy:       #0a0a0a;
-  --navy-mid:   #111111;
-  --gold:       #c9a84c;
-  --gold-light: #e8c96e;
-  --gold-pale:  #f5e8b8;
-  --gold-dim:   #8b6914;
-  --cream:      #f2ede4;
-  --teal:       #2e2e2e;
-  --teal-light: #484848;
-  --text-body:  #ccc4b4;
-  --text-dim:   #8a8070;
+  --night:      #faf8f5; /* Light background */
+  --navy:       #ffffff; /* Card/Nav backgrounds */
+  --navy-mid:   #f4f0e6; /* Soft accent borders/backgrounds */
+  --gold:       #b3923b; /* Gold with high contrast on light backgrounds */
+  --gold-light: #c9a84c; /* Lighter gold accent */
+  --gold-pale:  #e0d2ad; /* Muted pale gold */
+  --gold-dim:   #755a1a; /* Dark gold for text highlights */
+  --cream:      #111111; /* Dark contrasting element background */
+  --teal:       #f5ebd6;
+  --teal-light: #e0d0b8;
+  --text-body:  #1e1b15; /* Dark text for readability */
+  --text-dim:   #5c5446; /* Muted dark text */
+  --bg-light:   #faf8f5;
+
+  /* Theme-specific custom variables to adapt Nav, Footer, and Page backgrounds */
+  --nav-bg: rgba(250, 248, 245, 0.6);
+  --nav-bg-scrolled: rgba(250, 248, 245, 0.96);
+  --nav-mobile-bg: rgba(250, 248, 245, 0.98);
+  --nav-border: rgba(179, 146, 59, 0.22);
+  --nav-border-dashed: rgba(179, 146, 59, 0.12);
+  
+  --footer-bg: rgba(252, 251, 250, 0.97);
+  --border-gold-alpha: rgba(179, 146, 59, 0.12);
+  --border-gold-alpha-heavy: rgba(179, 146, 59, 0.22);
+  
+  --section-bg: rgba(244, 240, 230, 0.6);
+  
+  --header-gradient-start: rgba(250, 248, 245, 0.85);
+  --header-gradient-end: rgba(244, 240, 230, 0.5);
+  
+  --select-bg: rgba(244, 240, 230, 0.95);
 
   --font-display: "Bulagria", "Luxury", Georgia, serif;
   --font-body:    var(--font-montserrat), sans-serif;
@@ -55,6 +74,7 @@
   --color-teal-light:  var(--teal-light);
   --color-muted:       var(--text-body);
   --color-dim:         var(--text-dim);
+  --color-bg-light:    var(--bg-light);
   --font-sans:         var(--font-montserrat), sans-serif;
   --font-display:      "Bulagria", "Luxury", Georgia, serif;
   --font-body:         var(--font-montserrat), sans-serif;
@@ -270,9 +290,9 @@ body {
   background-image: url("/svg/Asset_7.svg");
   background-size: 1000px 1000px;
   background-repeat: repeat;
-  opacity: 0.03;
-  /* shift hue away from gold so pattern is distinct from UI elements */
-  filter: hue-rotate(190deg) saturate(0.6) brightness(1.4);
+  opacity: 0.04;
+  /* invert + hue-rotate so the grey SVG becomes a warm subtle texture on light bg */
+  filter: invert(1) hue-rotate(190deg) saturate(0.4) brightness(1.8);
   pointer-events: none;
 }
 
@@ -283,7 +303,7 @@ body {
   inset: 0;
   pointer-events: none;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
-  opacity: 0.025;
+  opacity: 0.012;
   z-index: 9999;
 }
 

@@ -30,8 +30,8 @@ export default function Footer() {
         <footer style={{
             position: "relative",
             zIndex: 1,
-            background: "rgba(8,8,8,0.97)",
-            borderTop: "1px solid rgba(201,168,76,0.12)",
+            background: "var(--footer-bg)",
+            borderTop: "1px solid var(--border-gold-alpha)",
         }}>
             {/* Gold gradient cap */}
             <div style={{
@@ -114,15 +114,11 @@ export default function Footer() {
                                 {l.label}
                             </Link>
                         ))}
-                        <a href="https://wa.me/919187418343" target="_blank" rel="noopener noreferrer" style={{ ...colLink, marginTop: ".5rem" }}
+
+                        <a href="https://instagram.com/ahic.academy" target="_blank" rel="noopener noreferrer" style={colLink}
                             onMouseEnter={(e) => e.currentTarget.style.color = "var(--gold)"}
                             onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-dim)"}>
-                            💬 WhatsApp
-                        </a>
-                        <a href="https://instagram.com/ahicsuffah" target="_blank" rel="noopener noreferrer" style={colLink}
-                            onMouseEnter={(e) => e.currentTarget.style.color = "var(--gold)"}
-                            onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-dim)"}>
-                            📸 @ahicsuffah
+                            📸 @ahic.academy
                         </a>
                     </div>
 

@@ -239,7 +239,6 @@ const PLATFORM_HIGHLIGHTS = [
 
 export default function Courses() {
     useReveal();
-    const whatsappLink = "https://wa.me/919187418343?text=Assalamu%20Alaikum%2C%20I%27m%20interested%20in%20enrolling%20at%20Al%20Hiraa%20Islamic%20Coaching%20Centre.";
 
     return (
         <div style={{ position: "relative", zIndex: 1 }}>
@@ -248,7 +247,7 @@ export default function Courses() {
             <div className="glow-border-bottom" style={{
                 position: "relative", zIndex: 1, paddingTop: "9rem", paddingBottom: "3rem",
                 textAlign: "center",
-                background: "linear-gradient(to bottom,rgba(8,8,8,.85) 0%,rgba(10,10,10,.5) 100%)",
+                background: "linear-gradient(to bottom, var(--header-gradient-start) 0%, var(--header-gradient-end) 100%)",
                 backdropFilter: "blur(8px)", overflow: "hidden",
             }}>
                 <div className="page-header-blobs" aria-hidden>
@@ -460,7 +459,7 @@ export default function Courses() {
             {/* How Classes Are Delivered */}
             <section className="glow-border-top glow-border-bottom" style={{
                 padding: "6rem 1.5rem",
-                background: "rgba(10,10,10,.55)",
+                background: "var(--section-bg)",
                 backdropFilter: "blur(6px)",
             }}>
                 <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
@@ -541,7 +540,7 @@ export default function Courses() {
             {/* CTA */}
             <section className="glow-border-top" style={{
                 padding: "6rem 1.5rem 8rem",
-                background: "rgba(10,10,10,.55)",
+                background: "var(--section-bg)",
                 backdropFilter: "blur(6px)",
             }}>
                 <div style={{ maxWidth: "760px", margin: "0 auto", textAlign: "center" }}>
@@ -551,24 +550,14 @@ export default function Courses() {
                             Enroll Your Child Today
                         </h2>
                         <p style={{ color: "var(--text-body)", lineHeight: 1.95, marginBottom: "2rem", fontSize: "1rem", maxWidth: "580px", margin: "0 auto 2.25rem" }}>
-                            Fill in our enrollment form and we&apos;ll reach out within 48 hours or contact us directly
-                            on WhatsApp for an immediate response. Classes are available online (and offline locally),
-                            for students aged 4 to 25.
+                            Fill in our enrollment form and we&apos;ll reach out within 48 hours to complete the process.
+                            Classes are available online (and offline locally) for students aged 4 to 25.
                         </p>
 
                         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
                             <Link href="/join" className="btn-gold">
                                 Fill Enrollment Form
                             </Link>
-                            <a
-                                href={whatsappLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn-ghost"
-                                style={{ display: "inline-flex", alignItems: "center", gap: ".5rem" }}
-                            >
-                                <span>&#x1F4AC;</span> WhatsApp Us
-                            </a>
                         </div>
 
                         <div style={{ marginTop: "2rem", display: "flex", gap: "2rem", justifyContent: "center", flexWrap: "wrap" }}>

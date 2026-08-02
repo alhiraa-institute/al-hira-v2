@@ -242,7 +242,7 @@ function TimelinePreview() {
   return (
     <section className="glow-border-top glow-border-bottom" style={{
       padding: "7rem 1.5rem",
-      background: "rgba(10,10,10,0.6)",
+      background: "var(--section-bg)",
       backdropFilter: "blur(6px)",
       position: "relative", zIndex: 1,
     }}>
@@ -303,7 +303,6 @@ function CTA() {
         </p>
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
           <Link href="/join" className="btn-gold">Start Learning Today</Link>
-          <a href="https://wa.me/919187418343?text=Assalamu%20Alaikum%2C%20I%27m%20interested%20in%20enrolling%20at%20AHIC" target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ display: "inline-flex", alignItems: "center", gap: ".4rem" }}>💬 WhatsApp Us</a>
         </div>
       </div>
     </section>

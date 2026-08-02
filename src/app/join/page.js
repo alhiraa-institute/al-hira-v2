@@ -29,7 +29,7 @@ const FAQS = [
     { q: "What courses are currently running?", a: "We currently offer: Tajweed Basics - Junior, Tajweed Foundations - Senior, Qur'anic Recitation, Hifz-e-Qur'an (up to 3 Juz), and Arabic for Beginners. Qiraat, Calligraphy, and Qur'anic Tarjuma are launching shortly." },
     { q: "How do online classes work?", a: "Students join their scheduled class through the Suffah platform — our purpose-built learning system. No downloads needed. It runs in any browser on any device." },
     { q: "Can parents monitor their child's progress?", a: "Yes. Every parent or guardian receives a dedicated Suffah Guardian account with full visibility into attendance, teacher feedback, and prayer tracking — for their child only." },
-    { q: "How do I enroll or get more information?", a: "Fill in the enrollment form on this page and we'll respond within 48 hours. For a faster reply, WhatsApp us directly on +91 91874 18343 or follow us on Instagram @ahicsuffah." },
+    { q: "How do I enroll or get more information?", a: "Fill in the enrollment form on this page and we'll respond within 48 hours. You can also follow us on Instagram @ahicsuffah for updates and queries." },
 ];
 
 export default function Join() {
@@ -72,7 +72,7 @@ export default function Join() {
     return (
         <div style={{ position: "relative", zIndex: 1 }}>
             {/* Page Header */}
-            <div style={{ position: "relative", zIndex: 1, paddingTop: "9rem", paddingBottom: "3rem", textAlign: "center", borderBottom: "1px solid rgba(201,168,76,.1)", background: "linear-gradient(to bottom,rgba(7,9,15,.85) 0%,rgba(10,10,10,.5) 100%)", backdropFilter: "blur(8px)", overflow: "hidden" }}>
+            <div style={{ position: "relative", zIndex: 1, paddingTop: "9rem", paddingBottom: "3rem", textAlign: "center", borderBottom: "1px solid rgba(201,168,76,.1)", background: "linear-gradient(to bottom, var(--header-gradient-start) 0%, var(--header-gradient-end) 100%)", backdropFilter: "blur(8px)", overflow: "hidden" }}>
                 <div className="page-header-blobs" aria-hidden>
                     <div className="page-header-blob-1" />
                     <div className="page-header-blob-2" />
@@ -108,7 +108,7 @@ export default function Join() {
                                 { name: "name", label: "Student Name", type: "text", required: true },
                                 { name: "age", label: "Age / Level", type: "text", required: false },
                                 { name: "email", label: "Parent Email", type: "email", required: true },
-                                { name: "phone", label: "WhatsApp / Phone", type: "tel", required: false },
+                                { name: "phone", label: "Phone / WhatsApp", type: "tel", required: false },
                             ].map((field) => (
                                 <div key={field.name}>
                                     <label style={{ display: "block", fontSize: ".72rem", color: "var(--text-dim)", letterSpacing: ".06em", textTransform: "uppercase", marginBottom: ".4rem", fontFamily: "var(--font-body)", fontWeight: 600 }}>{field.label}{field.required && " *"}</label>
@@ -123,7 +123,7 @@ export default function Join() {
                             ))}
                             <div>
                                 <label style={{ display: "block", fontSize: ".72rem", color: "var(--text-dim)", letterSpacing: ".06em", textTransform: "uppercase", marginBottom: ".4rem", fontFamily: "var(--font-body)", fontWeight: 600 }}>Course of Interest</label>
-                                <select name="program" value={form.program} onChange={handleChange} style={{ ...inputStyle, background: "rgba(10,10,10,.95)", color: form.program ? "var(--cream)" : "var(--text-dim)" }}>
+                                <select name="program" value={form.program} onChange={handleChange} style={{ ...inputStyle, background: "var(--select-bg)", color: form.program ? "var(--cream)" : "var(--text-dim)" }}>
                                     <option value="">Select a course</option>
                                     <option value="tajweed">Tajweed Basics - Junior</option>
                                     <option value="tarteel">Tajweed Foundations - Senior</option>

@@ -43,7 +43,7 @@ export default function Legacy() {
     return (
         <div style={{ position: "relative", zIndex: 1 }}>
             {/* Page Header */}
-            <div className="glow-border-bottom" style={{ position: "relative", zIndex: 1, paddingTop: "9rem", paddingBottom: "3rem", textAlign: "center", background: "linear-gradient(to bottom,rgba(7,9,15,.85) 0%,rgba(10,10,10,.5) 100%)", backdropFilter: "blur(8px)", overflow: "hidden" }}>
+            <div className="glow-border-bottom" style={{ position: "relative", zIndex: 1, paddingTop: "9rem", paddingBottom: "3rem", textAlign: "center", background: "linear-gradient(to bottom, var(--header-gradient-start) 0%, var(--header-gradient-end) 100%)", backdropFilter: "blur(8px)", overflow: "hidden" }}>
                 <div className="page-header-blobs" aria-hidden>
                     <div className="page-header-blob-1" />
                     <div className="page-header-blob-2" />

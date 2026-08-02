@@ -68,7 +68,7 @@ export async function POST(request) {
                     <tr><td style="padding:10px 0;border-bottom:1px solid #eee;color:#888;width:160px;font-weight:600;">Student Name</td><td style="padding:10px 0;border-bottom:1px solid #eee;">${name}</td></tr>
                     <tr><td style="padding:10px 0;border-bottom:1px solid #eee;color:#888;font-weight:600;">Age / Level</td><td style="padding:10px 0;border-bottom:1px solid #eee;">${age || "—"}</td></tr>
                     <tr><td style="padding:10px 0;border-bottom:1px solid #eee;color:#888;font-weight:600;">Parent Email</td><td style="padding:10px 0;border-bottom:1px solid #eee;">${email}</td></tr>
-                    <tr><td style="padding:10px 0;border-bottom:1px solid #eee;color:#888;font-weight:600;">WhatsApp / Phone</td><td style="padding:10px 0;border-bottom:1px solid #eee;">${phone || "—"}</td></tr>
+                    <tr><td style="padding:10px 0;border-bottom:1px solid #eee;color:#888;font-weight:600;">Phone / WhatsApp</td><td style="padding:10px 0;border-bottom:1px solid #eee;">${phone || "—"}</td></tr>
                     <tr><td style="padding:10px 0;border-bottom:1px solid #eee;color:#888;font-weight:600;">Course of Interest</td><td style="padding:10px 0;border-bottom:1px solid #eee;">${programLabels[program]}</td></tr>
                     ${message ? `<tr><td style="padding:10px 0;color:#888;font-weight:600;vertical-align:top;">Message</td><td style="padding:10px 0;">${message.replace(/\n/g, "<br>")}</td></tr>` : ""}
                 </table>
