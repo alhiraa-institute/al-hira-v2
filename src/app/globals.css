@@ -22,37 +22,37 @@
 /* ── Arabic font (Scheherazade New — full harakat support, via Google Fonts) ── */
 
 :root {
-  --night:      #faf8f5; /* Light background */
-  --navy:       #ffffff; /* Card/Nav backgrounds */
-  --navy-mid:   #f4f0e6; /* Soft accent borders/backgrounds */
-  --gold:       #b3923b; /* Gold with high contrast on light backgrounds */
+  --night:      #def1ed; /* Main background — soft mint */
+  --navy:       #f2faf8; /* Card/Nav backgrounds — lighter mint */
+  --navy-mid:   #c8e8e2; /* Soft mint-teal accent */
+  --gold:       #b3923b; /* Gold with high contrast on mint backgrounds */
   --gold-light: #c9a84c; /* Lighter gold accent */
   --gold-pale:  #e0d2ad; /* Muted pale gold */
   --gold-dim:   #755a1a; /* Dark gold for text highlights */
-  --cream:      #111111; /* Dark contrasting element background */
-  --teal:       #f5ebd6;
-  --teal-light: #e0d0b8;
-  --text-body:  #1e1b15; /* Dark text for readability */
-  --text-dim:   #5c5446; /* Muted dark text */
-  --bg-light:   #faf8f5;
+  --cream:      #0d1f1d; /* Dark text — deep teal-black */
+  --teal:       #c8e8e2; /* Teal accent surface */
+  --teal-light: #b0d8d2; /* Slightly deeper teal accent */
+  --text-body:  #1a2e2b; /* Primary dark text — deep teal */
+  --text-dim:   #4a6b65; /* Muted teal-grey text */
+  --bg-light:   #def1ed;
 
-  /* Theme-specific custom variables to adapt Nav, Footer, and Page backgrounds */
-  --nav-bg: rgba(250, 248, 245, 0.6);
-  --nav-bg-scrolled: rgba(250, 248, 245, 0.96);
-  --nav-mobile-bg: rgba(250, 248, 245, 0.98);
+  /* Theme-specific layout background variables */
+  --nav-bg: rgba(222, 241, 237, 0.6);
+  --nav-bg-scrolled: rgba(222, 241, 237, 0.96);
+  --nav-mobile-bg: rgba(222, 241, 237, 0.98);
   --nav-border: rgba(179, 146, 59, 0.22);
   --nav-border-dashed: rgba(179, 146, 59, 0.12);
-  
-  --footer-bg: rgba(252, 251, 250, 0.97);
+
+  --footer-bg: rgba(210, 235, 230, 0.97);
   --border-gold-alpha: rgba(179, 146, 59, 0.12);
   --border-gold-alpha-heavy: rgba(179, 146, 59, 0.22);
-  
-  --section-bg: rgba(244, 240, 230, 0.6);
-  
-  --header-gradient-start: rgba(250, 248, 245, 0.85);
-  --header-gradient-end: rgba(244, 240, 230, 0.5);
-  
-  --select-bg: rgba(244, 240, 230, 0.95);
+
+  --section-bg: rgba(200, 232, 226, 0.55);
+
+  --header-gradient-start: rgba(222, 241, 237, 0.85);
+  --header-gradient-end: rgba(200, 232, 226, 0.5);
+
+  --select-bg: rgba(200, 232, 226, 0.95);
 
   --font-display: "Bulagria", "Luxury", Georgia, serif;
   --font-body:    var(--font-montserrat), sans-serif;
@@ -177,11 +177,12 @@ body {
   --glow-x: 50%;
   --glow-y: 50%;
   position: relative;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(201,168,76,0.12);
-  border-radius: 4px;
-  transition: transform 0.3s ease;
+  background: rgba(255,255,255,0.45);
+  border: 1px solid rgba(179,146,59,0.18);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   isolation: isolate;
+  box-shadow: 0 2px 12px rgba(26,46,43,0.06);
 }
 
 /* Background glow — controlled via CSS vars set by GlowCards.js */
@@ -232,6 +233,7 @@ body {
 
 .ahic-card:hover {
   transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(26,46,43,0.10);
 }
 
 /* Reset stacking for card children */
@@ -246,7 +248,7 @@ body {
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--night);
+  color: #ffffff;
   background: linear-gradient(135deg, var(--gold-light), var(--gold));
   padding: 0.875rem 2.5rem;
   border-radius: 2px;
@@ -258,7 +260,7 @@ body {
 }
 .btn-gold:hover {
   opacity: 0.88;
-  box-shadow: 0 8px 32px rgba(201,168,76,0.35);
+  box-shadow: 0 8px 32px rgba(179,146,59,0.4);
 }
 
 /* ── Ghost button ── */
@@ -267,19 +269,20 @@ body {
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--gold-light);
+  color: var(--gold);
   background: transparent;
   padding: 0.875rem 2.5rem;
   border-radius: 2px;
-  border: 1px solid rgba(201,168,76,0.4);
+  border: 1px solid rgba(179,146,59,0.45);
   cursor: pointer;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
   display: inline-block;
   text-decoration: none;
 }
 .btn-ghost:hover {
   border-color: var(--gold);
-  background: rgba(201,168,76,0.07);
+  background: rgba(179,146,59,0.08);
+  color: var(--gold-dim);
 }
 
 /* ── Asset_7 tiled background ── */
@@ -327,7 +330,7 @@ body {
   height: 14px;
   border-radius: 50%;
   background: var(--gold);
-  border: 3px solid var(--night);
+  border: 3px solid #ffffff;
   outline: 1px solid var(--gold);
   z-index: 1;
 }
