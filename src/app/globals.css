@@ -22,37 +22,18 @@
 /* ── Arabic font (Scheherazade New — full harakat support, via Google Fonts) ── */
 
 :root {
-  --night:      #faf6ee; /* Main background — warm cream */
-  --navy:       #ffffff; /* Card/Nav — pure white */
-  --navy-mid:   #f2e8d5; /* Warm cream accent */
-  --gold:       #b3923b; /* Gold — high contrast on cream */
-  --gold-light: #c9a84c; /* Lighter gold */
-  --gold-pale:  #e0d2ad; /* Muted pale gold */
-  --gold-dim:   #755a1a; /* Dark gold */
-  --cream:      #1a1208; /* Dark text — rich warm black */
-  --teal:       #f2e8d5; /* Warm accent surface */
-  --teal-light: #e8dcc4; /* Deeper warm accent */
-  --text-body:  #2a1f0e; /* Primary dark text — warm brown-black */
-  --text-dim:   #6b5a3e; /* Muted warm text */
-  --bg-light:   #faf6ee;
-
-  /* Theme-specific layout background variables */
-  --nav-bg: rgba(250, 246, 238, 0.65);
-  --nav-bg-scrolled: rgba(250, 246, 238, 0.97);
-  --nav-mobile-bg: rgba(250, 246, 238, 0.99);
-  --nav-border: rgba(179, 146, 59, 0.22);
-  --nav-border-dashed: rgba(179, 146, 59, 0.12);
-
-  --footer-bg: rgba(245, 240, 228, 0.97);
-  --border-gold-alpha: rgba(179, 146, 59, 0.14);
-  --border-gold-alpha-heavy: rgba(179, 146, 59, 0.25);
-
-  --section-bg: rgba(242, 232, 213, 0.45);
-
-  --header-gradient-start: rgba(250, 246, 238, 0.88);
-  --header-gradient-end: rgba(242, 232, 213, 0.5);
-
-  --select-bg: rgba(242, 232, 213, 0.95);
+  --night:      #080808;
+  --navy:       #0a0a0a;
+  --navy-mid:   #111111;
+  --gold:       #c9a84c;
+  --gold-light: #e8c96e;
+  --gold-pale:  #f5e8b8;
+  --gold-dim:   #8b6914;
+  --cream:      #f2ede4;
+  --teal:       #2e2e2e;
+  --teal-light: #484848;
+  --text-body:  #ccc4b4;
+  --text-dim:   #8a8070;
 
   --font-display: "Bulagria", "Luxury", Georgia, serif;
   --font-body:    var(--font-montserrat), sans-serif;
@@ -74,7 +55,6 @@
   --color-teal-light:  var(--teal-light);
   --color-muted:       var(--text-body);
   --color-dim:         var(--text-dim);
-  --color-bg-light:    var(--bg-light);
   --font-sans:         var(--font-montserrat), sans-serif;
   --font-display:      "Bulagria", "Luxury", Georgia, serif;
   --font-body:         var(--font-montserrat), sans-serif;
@@ -177,12 +157,11 @@ body {
   --glow-x: 50%;
   --glow-y: 50%;
   position: relative;
-  background: rgba(255,255,255,0.45);
-  border: 1px solid rgba(179,146,59,0.18);
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,168,76,0.12);
+  border-radius: 4px;
+  transition: transform 0.3s ease;
   isolation: isolate;
-  box-shadow: 0 2px 12px rgba(26,46,43,0.06);
 }
 
 /* Background glow — controlled via CSS vars set by GlowCards.js */
@@ -233,7 +212,6 @@ body {
 
 .ahic-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(26,46,43,0.10);
 }
 
 /* Reset stacking for card children */
@@ -248,7 +226,7 @@ body {
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--night);
   background: linear-gradient(135deg, var(--gold-light), var(--gold));
   padding: 0.875rem 2.5rem;
   border-radius: 2px;
@@ -260,7 +238,7 @@ body {
 }
 .btn-gold:hover {
   opacity: 0.88;
-  box-shadow: 0 8px 32px rgba(179,146,59,0.4);
+  box-shadow: 0 8px 32px rgba(201,168,76,0.35);
 }
 
 /* ── Ghost button ── */
@@ -269,20 +247,19 @@ body {
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-light);
   background: transparent;
   padding: 0.875rem 2.5rem;
   border-radius: 2px;
-  border: 1px solid rgba(179,146,59,0.45);
+  border: 1px solid rgba(201,168,76,0.4);
   cursor: pointer;
-  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease;
   display: inline-block;
   text-decoration: none;
 }
 .btn-ghost:hover {
   border-color: var(--gold);
-  background: rgba(179,146,59,0.08);
-  color: var(--gold-dim);
+  background: rgba(201,168,76,0.07);
 }
 
 /* ── Asset_7 tiled background ── */
@@ -293,9 +270,9 @@ body {
   background-image: url("/svg/Asset_7.svg");
   background-size: 1000px 1000px;
   background-repeat: repeat;
-  opacity: 0.04;
-  /* invert + hue-rotate so the grey SVG becomes a warm subtle texture on light bg */
-  filter: invert(1) hue-rotate(190deg) saturate(0.4) brightness(1.8);
+  opacity: 0.03;
+  /* shift hue away from gold so pattern is distinct from UI elements */
+  filter: hue-rotate(190deg) saturate(0.6) brightness(1.4);
   pointer-events: none;
 }
 
@@ -306,7 +283,7 @@ body {
   inset: 0;
   pointer-events: none;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
-  opacity: 0.012;
+  opacity: 0.025;
   z-index: 9999;
 }
 
@@ -330,7 +307,7 @@ body {
   height: 14px;
   border-radius: 50%;
   background: var(--gold);
-  border: 3px solid #ffffff;
+  border: 3px solid var(--night);
   outline: 1px solid var(--gold);
   z-index: 1;
 }
