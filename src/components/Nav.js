@@ -148,11 +148,12 @@ export default function Nav() {
             {open && (
                 <div style={{
                     position: "fixed", top: 72, left: 0, right: 0,
-                    background: "var(--nav-mobile-bg)",
+                    background: "rgba(8, 8, 8, 0.98)",
                     borderBottom: "1px solid var(--nav-border)",
-                    padding: "1.5rem 2rem", zIndex: 99,
-                    backdropFilter: "blur(20px)",
-                    WebkitBackdropFilter: "blur(20px)",
+                    padding: "1.5rem 2rem 2rem", zIndex: 99,
+                    backdropFilter: "blur(24px)",
+                    WebkitBackdropFilter: "blur(24px)",
+                    boxShadow: "0 20px 40px rgba(0,0,0,0.9)",
                 }}>
                     {links.map((l) => (
                         <Link
@@ -161,12 +162,12 @@ export default function Nav() {
                             onClick={() => setOpenAt(null)}
                             style={{
                                 display: "block", padding: "0.85rem 0",
-                                fontFamily: "var(--font-body)", fontSize: "0.72rem",
-                                fontWeight: 500, letterSpacing: "0.1em",
+                                fontFamily: "var(--font-body)", fontSize: "0.8rem",
+                                fontWeight: 600, letterSpacing: "0.12em",
                                 textTransform: "uppercase",
-                                color: pathname === l.href ? "var(--gold)" : "var(--text-body)",
+                                color: pathname === l.href ? "var(--gold-light)" : "var(--gold)",
                                 textDecoration: "none",
-                                borderBottom: "1px solid rgba(255,255,255,0.05)",
+                                borderBottom: "1px solid rgba(201,168,76,0.15)",
                             }}
                         >
                             {l.label}
@@ -182,10 +183,10 @@ export default function Nav() {
                                 display: "inline-block",
                                 fontFamily: "var(--font-body)", fontSize: "0.72rem",
                                 fontWeight: 600, letterSpacing: "0.08em",
-                                textTransform: "uppercase", color: "var(--gold)",
+                                textTransform: "uppercase", color: "var(--gold-light)",
                                 background: "transparent",
                                 padding: "0.75rem 1.5rem", borderRadius: "2px", textDecoration: "none",
-                                border: "1px solid rgba(201,168,76,0.35)",
+                                border: "1px solid rgba(201,168,76,0.5)",
                             }}
                         >
                             Login

@@ -35,6 +35,13 @@
   --text-body:  #ccc4b4;
   --text-dim:   #8a8070;
 
+  /* Nav layout variables */
+  --nav-bg: rgba(8, 8, 8, 0.85);
+  --nav-bg-scrolled: rgba(8, 8, 8, 0.96);
+  --nav-mobile-bg: rgba(10, 10, 10, 0.98);
+  --nav-border: rgba(201, 168, 76, 0.2);
+  --nav-border-dashed: rgba(201, 168, 76, 0.15);
+
   --font-display: "Bulagria", "Luxury", Georgia, serif;
   --font-body:    var(--font-montserrat), sans-serif;
   --font-arabic:  "Scheherazade New", serif;
