@@ -95,8 +95,8 @@ function Hero() {
           color: "var(--text-body)", lineHeight: 1.75,
           maxWidth: "620px", margin: "0 auto 3rem",
         }}>
-          Welcome to Al Hiraa Islamic Coaching Centre — A dedicated Islamic learning platform
-          nurturing faith, character, and knowledge among young learners through authentic online teaching.
+          Welcome to Al Hiraa Quran Coaching Centre — A dedicated Quran learning platform
+          nurturing faith, character, and knowledge among learners through online teaching.
         </p>
 
         <div className="reveal delay-5" style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
@@ -164,9 +164,7 @@ function Marquee() {
 /* ── Stats ── */
 const STATS = [
   { value: "5+", label: "Years of Excellence" },
-  { value: "100+", label: "Students Guided" },
   { value: "5", label: "Core Courses" },
-  { value: "4–25", label: "Age Group (Years)" },
 ];
 
 function Stats() {
@@ -195,7 +193,7 @@ const FEATURES = [
   { icon: "🎓", title: "Tajweed Foundations - Senior", text: "Recite in a measured tone while focusing on Tajweed application, developing fluency and accuracy in reading words and short sentences." },
   { icon: "🕌", title: "Qur'anic Recitation", text: "The complete journey from the Arabic alphabet and Qa'idah to reading Juz Amma and beyond." },
   { icon: "👑", title: "Hifz-e-Qur'an", text: "Structured Hifz up to 3 Juz with daily targets, revision schedules, and milestone tracking built into the Suffah platform." },
-  { icon: "📜", title: "Arabic for Beginners", text: "Understand Qur'anic vocabulary, sentence structure, and grammar so you can read Islamic texts without relying solely on translation." },
+  { icon: "📜", title: "Arabic for Beginners", text: "Understand Qur'anic vocabulary, sentence structure, and grammar so you can read Arabic texts without relying solely on translation." },
   { icon: "🕋", title: "Prayer Accountability", text: "Our built-in Namaz Tracker monitors students' five daily prayers — spiritual growth is as much a part of AHIC as academic progress." },
 ];
 
@@ -208,9 +206,7 @@ function Features() {
           <h2 className="section-title" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", marginBottom: "1rem" }}>
             Five Courses. One Platform. One Purpose.
           </h2>
-          <p style={{ color: "var(--text-body)", fontSize: "0.98rem", lineHeight: 1.8, maxWidth: "560px", margin: "0 auto 1.5rem" }}>
-            Structured Islamic programs for ages 4–25, delivered live on our purpose-built learning platform — Suffah
-          </p>
+
           <div className="gold-rule" style={{ margin: "0 auto" }} />
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "1.25rem" }}>
@@ -233,7 +229,7 @@ function Features() {
 
 /* ── Timeline preview ── */
 const TIMELINE_PREVIEW = [
-  { year: "2021", icon: "🕊️", title: "Humble Beginnings", text: "Started with home tuitions, teaching 3–5 students with a vision to build a structured Islamic learning space" },
+  { year: "2021", icon: "🕊️", title: "Humble Beginnings", text: "Started with home tuitions, teaching 3–5 students with a vision to build a Quran (Tajweed) learning space" },
   { year: "2023", icon: "🏫", title: "Foundation Established", text: "On November 6, 2023 (21/4/1445 Hijri), we marked a milestone with the establishment of our Centre (AHIC)" },
   { year: "2026", icon: "🎯", title: "Digital Excellence", text: "Online LMS platform-Suffah and official website launched" },
 ];
@@ -298,8 +294,7 @@ function CTA() {
           fontFamily: "var(--font-body)", fontSize: "1.1rem", lineHeight: 1.85,
           color: "var(--text-body)", maxWidth: "600px", margin: "0 auto 2.5rem",
         }}>
-          Join hundreds of students worldwide who are strengthening their faith,
-          mastering the Qur&apos;an, and building noble character through our authentic Islamic education.
+          Join hundreds of students worldwide who are strengthening their faith and mastering the Qur&apos;an.
         </p>
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
           <Link href="/join" className="btn-gold">Start Learning Today</Link>

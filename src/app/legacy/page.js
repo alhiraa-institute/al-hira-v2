@@ -19,7 +19,7 @@ const LEGACY_ITEMS = [
     {
         icon: "",
         title: "A Life Devoted to Teaching",
-        text: "Dr. Noor ul Huq dedicated decades to teaching Quran, Arabic, and Islamic Studies  not from institutions, but from sincerity. He believed knowledge belonged to every Muslim, regardless of circumstance.",
+        text: "Dr. Noor ul Huq dedicated decades to teaching Quran, Arabic, and Quranic Studies  not from institutions, but from sincerity. He believed knowledge belonged to every Muslim, regardless of circumstance.",
     },
     {
         icon: "",
@@ -29,7 +29,7 @@ const LEGACY_ITEMS = [
     {
         icon: "",
         title: "Seeds of Al Hiraa",
-        text: "It was his model of teaching  personal, accountable, spiritually grounded  that shaped Al Hiraa's founding principles. The institution exists because one man demonstrated what Islamic education could look like when done right.",
+        text: "It was his model of teaching  personal, accountable, spiritually grounded  that shaped Al Hiraa's founding principles. The institution exists because one man demonstrated what Quran education could look like when done right.",
     },
     {
         icon: "",
@@ -65,9 +65,9 @@ export default function Legacy() {
                         <div style={{ fontSize: ".8rem", color: "var(--text-dim)", marginTop: "1rem", letterSpacing: ".08em", textTransform: "uppercase", fontStyle: "normal", fontFamily: "var(--font-body)", fontWeight: 600 }}>Dr. Noor ul Huq — Teacher, Scholar, Benefactor</div>
                     </div>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem" }}>
-                        Al Hiraa Islamic Coaching Centre was founded in the spirit of Dr. Noor ul Huq — a scholar and teacher
-                        whose generosity made Islamic education accessible to all who sought it. His life embodied what this
-                        institution stands for. Suffah, the platform we built to run that institution, is named in acknowledgement
+                        Al Hiraa Quran Coaching Centre was founded in the spirit of Dr. Noor ul Huq — a scholar and teacher
+                        whose generosity made Quran education accessible to all who sought it. His life embodied what this
+                        institution stands for. Suffah, the platform we built to run has named in acknowledgement
                         of his legacy: that sacred knowledge, properly structured, can outlast any single teacher.
                     </p>
                 </div>

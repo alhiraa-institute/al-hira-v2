@@ -60,7 +60,7 @@ export async function POST(request) {
     const html = `
         <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#f9f9f9;border-radius:8px;overflow:hidden;">
             <div style="background:#0a0a0a;padding:24px 32px;text-align:center;">
-                <h1 style="color:#c9a84c;font-size:20px;margin:0;letter-spacing:.05em;">Al Hiraa Islamic Centre</h1>
+                <h1 style="color:#c9a84c;font-size:20px;margin:0;letter-spacing:.05em;">Al Hiraa Quran Coaching Centre</h1>
                 <p style="color:#888;font-size:13px;margin:6px 0 0;">New Enrollment Inquiry</p>
             </div>
             <div style="padding:32px;background:#ffffff;">

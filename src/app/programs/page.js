@@ -78,7 +78,7 @@ const FEATURES = [
     },
     {
         icon: "",
-        tag: "Islamic Accountability",
+        tag: "Quran Accountability",
         title: "Namaz Prayer Tracker",
         color: "#c9a84c",
         points: [

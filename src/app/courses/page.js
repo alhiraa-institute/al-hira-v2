@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 
@@ -162,9 +163,9 @@ const COURSES = [
         arabic: "عَرَبِيَّة",
         color: "#c9a84c",
         icon: "📜",
-        tagline: "Practical Arabic for everyday Islamic learning.",
+        tagline: "Practical Arabic for everyday learning.",
         description:
-            "This course helps learners develop confidence in reading, understanding, and using basic Arabic in daily contexts to better understand Qur'anic and Islamic terms.",
+            "This course helps learners develop confidence in reading, understanding, and using basic Arabic in daily contexts to better understand Qur'anic terms.",
         highlights: [
             "Building practical Arabic language skills.",
             "Learning essential vocabulary.",
@@ -192,7 +193,7 @@ const UPCOMING = [
         icon: "\u270F\uFE0F",
         title: "Urdu & Arabic Calligraphy",
         arabic: "\u062e\u0637\u064c",
-        description: "The sacred art of Islamic script \u2014 Naskh, Thuluth, and Nastaliq \u2014 using traditional tools and methods to develop beautiful, purposeful handwriting.",
+        description: "The sacred art of Arabic script — Naskh, Thuluth, and Nastaliq — using traditional tools and methods to develop beautiful, purposeful handwriting.",
         badge: "Launching Shortly",
     },
     {
@@ -213,7 +214,7 @@ const PLATFORM_HIGHLIGHTS = [
     {
         icon: "\uD83E\uDD32",
         title: "Namaz Tracker \u2014 Prayer Built Into Learning",
-        text: "No Islamic education system should stop at the academic. Suffah includes a dedicated Namaz Tracker where teachers log students\u2019 five daily prayers \u2014 Fajr, Dhuhr, Asr, Maghrib, Isha \u2014 building spiritual accountability alongside Qur\u2019anic knowledge.",
+        text: "Suffah includes a dedicated Namaz Tracker where teachers log students’ five daily prayers — Fajr, Dhuhr, Asr, Maghrib, Isha — building spiritual accountability alongside Qur’anic knowledge.",
     },
     {
         icon: "\uD83D\uDC68\u200D\uD83D\uDC69\u200D\uD83D\uDC67",
@@ -255,13 +256,13 @@ export default function Courses() {
                     <div className="page-header-blob-2" />
                 </div>
                 <div style={{ maxWidth: "760px", margin: "0 auto", padding: "0 1.5rem", position: "relative", zIndex: 1 }}>
-                    <p className="section-label" style={{ marginBottom: ".75rem" }}>Al Hiraa Islamic Coaching Centre</p>
+                    <p className="section-label" style={{ marginBottom: ".75rem" }}>Al Hiraa Quran Coaching Centre</p>
                     <h1 className="section-title" style={{ fontSize: "clamp(2rem,5vw,3.5rem)", fontWeight: 400, marginBottom: ".5rem" }}>
                         Courses &amp; Programs
                     </h1>
                     <p style={{ fontFamily: "var(--font-arabic)", fontSize: "clamp(1.2rem,2.5vw,1.6rem)", color: "var(--gold)", opacity: .65, direction: "rtl", margin: ".25rem 0 1rem" }}>الدُّرُوسُ وَالبَرَامِج</p>
                     <p style={{ fontFamily: "var(--font-body)", fontStyle: "italic", fontSize: "clamp(.9rem,2vw,1.05rem)", color: "var(--text-body)", lineHeight: 1.8, maxWidth: "580px", margin: "0 auto 1.5rem" }}>
-                        Five structured Islamic courses, delivered live on our purpose-built learning platform for students aged 4 to 25 years, online and offline.
+                        Five courses, delivered live on our purpose-built learning platform for students, online and offline.
                     </p>
                     <div className="gold-rule" style={{ margin: "1.25rem auto 0" }} />
                 </div>
@@ -466,14 +467,14 @@ export default function Courses() {
                     <div className="reveal" style={{ textAlign: "center", marginBottom: "1rem" }}>
                         <p className="section-label" style={{ marginBottom: ".75rem" }}>How Learning Happens at AHIC</p>
                         <h2 className="section-title" style={{ fontSize: "clamp(1.8rem,3.5vw,2.6rem)" }}>
-                            The Suffah Platform Built for Islamic Education
+                            The Suffah Platform Built for Quran Education
                         </h2>
                         <p className="reveal" style={{
                             color: "var(--text-body)", fontSize: ".97rem", lineHeight: 1.85,
                             maxWidth: "680px", margin: "1.25rem auto 0",
                         }}>
-                            Most online Islamic education platforms are generic LMS tools with Islamic branding added.
-                            Suffah was built from scratch because Islamic education has specific requirements that no
+                            Most online Quran education platforms are generic LMS tools with Quranic branding added.
+                            Suffah was built from scratch because Quran education has specific requirements that no
                             off-the-shelf system could meet: prayer accountability, parental visibility, and the kind
                             of teacher-student trust that only structured, role-based oversight can provide.
                         </p>
@@ -570,14 +571,18 @@ export default function Courses() {
                             >
                                 &#x1F4DE; +91 91874 18343
                             </a>
-                            <a href="https://instagram.com/ahicsuffah" target="_blank" rel="noopener noreferrer" style={{
-                                fontFamily: "var(--font-body)", fontSize: ".75rem", color: "var(--text-dim)",
-                                textDecoration: "none", letterSpacing: ".05em", transition: "color .2s",
-                            }}
-                                onMouseEnter={(e) => e.currentTarget.style.color = "var(--gold)"}
-                                onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-dim)"}
+                            <a href="https://www.instagram.com/Alhiraa.Quran" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram"
+                                style={{
+                                    display: "inline-flex", alignItems: "center", justifyContent: "center",
+                                    width: "36px", height: "36px", borderRadius: "8px",
+                                    border: "1px solid rgba(201,168,76,0.3)",
+                                    transition: "all 0.2s ease",
+                                }}
+                                onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--gold)"; e.currentTarget.style.background = "rgba(201,168,76,0.15)"; e.currentTarget.style.transform = "scale(1.08)"; }}
+                                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(201,168,76,0.3)"; e.currentTarget.style.background = "transparent"; e.currentTarget.style.transform = "scale(1)"; }}
                             >
-                                📸 Instagram: @ahicsuffah
+                                <Image src="/instagram.png" alt="Instagram" width={22} height={22} style={{ objectFit: "contain" }} />
                             </a>
                         </div>
                     </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Instagram } from "lucide-react";
 
 export default function Footer() {
     const colHead = {
@@ -67,8 +68,8 @@ export default function Footer() {
                             maxWidth: "280px",
                             marginBottom: "1.5rem",
                         }}>
-                            Al Hiraa Islamic Coaching Centre — nurturing faith, knowledge, and character
-                            through authentic online Islamic education.
+                            Al Hiraa Quran Coaching Centre — nurturing faith, knowledge, and character
+                            through Quran education.
                         </p>
                         <p style={{
                             fontFamily: "var(--font-body)",
@@ -115,10 +116,24 @@ export default function Footer() {
                             </Link>
                         ))}
 
-                        <a href="https://instagram.com/ahic.academy" target="_blank" rel="noopener noreferrer" style={colLink}
-                            onMouseEnter={(e) => e.currentTarget.style.color = "var(--gold)"}
-                            onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-dim)"}>
-                            📸 @ahic.academy
+                        <a href="https://www.instagram.com/Alhiraa.Quran" target="_blank" rel="noopener noreferrer" className="nav-ig-link" aria-label="Follow us on Instagram" style={{ marginTop: "0.75rem", borderRadius: "20px", padding: "6px 12px", border: "1px solid rgba(201,168,76,0.25)", gap: "0.45rem" }}>
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="18" 
+                                height="18" 
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                strokeWidth="2" 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                className="ig-icon"
+                            >
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <span style={{ fontSize: "0.78rem", fontWeight: 500, letterSpacing: "0.02em" }}>@Alhiraa.Quran</span>
                         </a>
                     </div>
 
@@ -139,7 +154,7 @@ export default function Footer() {
                         color: "rgba(138,128,112,0.6)",
                         letterSpacing: "0.04em",
                     }}>
-                        © 2026 Al Hiraa Islamic Coaching Centre. All rights reserved.
+                        © 2026 Al Hiraa Quran Coaching Centre. All rights reserved.
                     </p>
                     <p style={{
                         fontFamily: "var(--font-arabic)",

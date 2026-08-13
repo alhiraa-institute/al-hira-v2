@@ -22,7 +22,7 @@ const TIMELINE = [
         title: "Humble Beginnings",
         side: "left",
         points: [
-            "Al Hiraa began as small home-based Qur’an and Islamic study circles, teaching a handful of students with a sincere vision to build a structured learning environment.",
+            "Al Hiraa began as small home-based Qur’an study circles, teaching a handful of students with a sincere vision to build a structured learning environment.",
         ],
     },
     {
@@ -31,7 +31,7 @@ const TIMELINE = [
         title: "A Growing Vision",
         side: "right",
         points: [
-            "Student numbers increased, and word spread through families and communities. The vision of transforming into a dedicated Islamic coaching centre began to take shape.",
+            "Student numbers increased, and word spread through families and communities. The vision of transforming into a dedicated Quran coaching centre began to take shape.",
         ],
     },
     {
@@ -40,7 +40,7 @@ const TIMELINE = [
         title: "Foundation Established",
         side: "left",
         points: [
-            "Al Hiraa Islamic Coaching Centre (AHIC) was formally established on 21-04-1445 AH (6 November 2023) with organized classroom learning.",
+            "Al Hiraa Quran Coaching Centre (AHIC) was formally established on 21-04-1445 AH (6 November 2023) with organized classroom learning.",
         ],
     },
     {
@@ -52,9 +52,8 @@ const TIMELINE = [
             "Naming of AHIC and brand identity creation",
             "Logo design and centre positioning",
             "Introduction of class activity tracking systems (Salah, Hifz, recitation tracking, etc.)",
-            "Certification system implemented",
             "Student–Teacher Meetings (STM) and Parent–Teacher Meetings (PTM) initiated",
-            "Rewards and recognition programs launched",
+            "Rewards and recognition programs launched (Offline)",
         ],
     },
     {
@@ -74,9 +73,9 @@ const TIMELINE = [
         side: "right",
         points: [
             "Evaluated existing LMS platforms and identified key limitations",
-            "Decision to build a dedicated Islamic learning platform aligned with AHIC values",
+            "Decision to build a dedicated Quran learning platform aligned with AHIC values",
             "Introduced Suffah — a purpose-built learning platform (LMS)",
-            "Website and LMS officially launched",
+            "Website and LMS launched",
             "Logo redesigned",
         ],
     },
@@ -86,7 +85,7 @@ const LEGACY_ITEMS = [
     {
         icon: "",
         title: "A Life Devoted to Knowledge",
-        text: "Al-Hajj, Al-Hafiz late Dr. Noor Ul Huq Saheb devoted his life to the pursuit of sacred knowledge. Begining his journey of learning, understanding and after the age of 50 Memorizing the Qur'an. He spent decades immersed in its guidance and wisdom. At the age of 90, he returned to his Creator, leaving behind more than memories. He planted the seed of Al Hiraa Islamic Coaching Center (AHIC), a legacy of learning that continues to inspire and nurture generations.",
+        text: "Al-Hajj, Al-Hafiz late Dr. Noor Ul Huq Saheb devoted his life to the pursuit of sacred knowledge. Begining his journey of learning, understanding and after the age of 50 Memorizing the Qur'an. He spent decades immersed in its guidance and wisdom. At the age of 90, he returned to his Creator, leaving behind more than memories. He planted the seed of Al Hiraa Quran Coaching Centre (AHIC), a legacy of learning that continues to inspire and nurture generations.",
     },
     {
         icon: "",
@@ -184,10 +183,10 @@ export default function Journey() {
                         <p style={{ fontSize: ".78rem", color: "var(--text-dim)", letterSpacing: ".08em", textTransform: "uppercase", fontFamily: "var(--font-body)", fontWeight: 600 }}>Dr. Noor ul Huq - Mentor & Benefactor</p>
                     </div>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", marginBottom: ".75rem" }}>
-                        The establishment of Al Hiraa Islamic Coaching Centre was made possible through the profound generosity of Al Hajj, Al Hafiz, late Dr. Noor ul Huq Saheb. By providing the space for this Centre, he planted a seed of Sadaqah Jariyah  ongoing charity  that continues to flourish with every verse recited and every lesson learned.
+                        The establishment of Al Hiraa Quran Coaching Centre was made possible through the profound generosity of Al Hajj, Al Hafiz, late Dr. Noor ul Huq Saheb. By providing the space for this Centre, he planted a seed of Sadaqah Jariyah  ongoing charity  that continues to flourish with every verse recited and every lesson learned.
                     </p>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", marginBottom: "1.75rem" }}>
-                        His life gave this institution its soul. His generosity gave it its home. Suffah, the platform we built to run that institution, is named in acknowledgement of his legacy: that sacred knowledge, properly structured, can outlast any single teacher.
+                        His life gave this institution its soul. His generosity gave it its home. Suffah, the platform we built to run has named in acknowledgement of his legacy: that sacred knowledge, properly structured, can outlast any single teacher.
                     </p>
                     <p style={{ fontFamily: "var(--font-body)", fontStyle: "italic", fontSize: "1rem", color: "var(--gold-pale)", lineHeight: 1.9, padding: "1.25rem 1.5rem", background: "rgba(201,168,76,.05)", borderRadius: "8px", border: "1px solid rgba(201,168,76,.15)" }}>
                         May Allah (SWT) have mercy upon Dr. Noor ul Huq Saheb, accept this noble act, and grant him a place in the highest ranks of Jannatul Firdaus. Ameen.

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 
@@ -17,7 +18,7 @@ function useReveal() {
 
 const PILLARS = [
     { icon: "📖", title: "Qur'anic Excellence", text: "From correct recitation with Tajweed to Hifz and Tarteel, every course builds a genuine relationship with the Book of Allah  not just surface-level reading." },
-    { icon: "🤲", title: "Spiritual Accountability", text: "The Namaz Tracker is built into the platform. Students log their five daily prayers alongside their academic milestones  because real Islamic education shapes the whole person." },
+    { icon: "🤲", title: "Spiritual Accountability", text: "The Namaz Tracker is built into the platform. Students log their five daily prayers alongside their academic milestones  because real Quran education shapes the whole person." },
     { icon: "👨‍👩‍👧‍👦", title: "Parental Visibility", text: "Parents receive their own Guardian account on Suffah. Attendance, prayer records, teacher feedback, and progress reports are visible in real time  for their child only." },
     { icon: "🎥", title: "Live Classes, Always", text: "Every session at AHIC is live. A real teacher, a real classroom on Suffah, and a student who can see, speak, and be seen. No pre-recorded substitutes." },
     { icon: "📈", title: "Structured Progression", text: "Each course is designed with levels and prerequisites. Students cannot skip foundations. Every stage is tracked, measured, and reported  growth is never assumed." },
@@ -43,7 +44,7 @@ export default function About() {
                     <div className="page-header-blob-2" />
                 </div>
                 <div style={{ maxWidth: "700px", margin: "0 auto", padding: "0 1.5rem", position: "relative", zIndex: 1 }}>
-                    <p className="section-label" style={{ marginBottom: ".75rem" }}>Al Hiraa Islamic Coaching Centre</p>
+                    <p className="section-label" style={{ marginBottom: ".75rem" }}>Al Hiraa Quran Coaching Centre</p>
                     <h1 className="section-title" style={{ fontSize: "clamp(2rem,5vw,3.5rem)", fontWeight: 400, marginBottom: ".5rem" }}>
                         About AHIC
                     </h1>
@@ -63,10 +64,10 @@ export default function About() {
                         Who We Are
                     </h2>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", maxWidth: "740px", margin: "0 auto 1.25rem" }}>
-                        <strong style={{ color: "var(--cream)" }}>Al Hiraa Islamic Coaching Centre (AHIC)</strong> is a dedicated Islamic educational institution committed to nurturing faith, knowledge, and strong moral character among school and college students aged 4 to 25 years.
+                        <strong style={{ color: "var(--cream)" }}>Al Hiraa Quran Coaching Centre</strong> is a dedicated Quran teaching platform committed to nurturing faith, knowledge and strong moral character.
                     </p>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", maxWidth: "740px", margin: "0 auto" }}>
-                        What began as a humble initiative of home tuitions grew over more than two years into a structured Centre for Islamic learning. On <strong style={{ color: "var(--cream)" }}>6 November 2023 (21/4/1445 Hijri)</strong>, we marked a milestone with the formal establishment of AHIC  and have been growing steadily ever since, alhamdulillah.
+                        What began as a humble initiative of home tuitions grew over more than two years into a structured Centre for Quran learning. On <strong style={{ color: "var(--cream)" }}>6 November 2023 (21/4/1445 Hijri)</strong>, we marked a milestone with the formal establishment of AHIC  and have been growing steadily ever since, alhamdulillah.
                     </p>
                 </div>
 
@@ -82,7 +83,7 @@ export default function About() {
                         <div style={{ fontSize: "1.75rem", marginBottom: ".85rem" }}></div>
                         <h3 style={{ fontFamily: "var(--font-body)", fontSize: ".82rem", fontWeight: 600, color: "var(--gold)", marginBottom: ".3rem", letterSpacing: ".06em", textTransform: "uppercase" }}>Mission</h3>
                         <p style={{ fontFamily: "var(--font-arabic)", fontSize: "1.05rem", color: "var(--gold-pale)", opacity: .65, direction: "rtl", margin: "0 0 .5rem" }}>رِسَالَتُنَا</p>
-                        <p style={{ fontSize: ".9rem", color: "var(--text-body)", lineHeight: 1.8 }}>To deliver structured, authentic Islamic education through live online and offline classes, making Qur&apos;anic recitation, Hifz, Arabic, and Islamic values accessible to every student regardless of location.</p>
+                        <p style={{ fontSize: ".9rem", color: "var(--text-body)", lineHeight: 1.8 }}>To deliver structured, authentic Quran education through live online and offline classes, making Qur&apos;anic recitation, Hifz, Arabic, and Islamic values accessible to every student regardless of location.</p>
                     </div>
                     <div className="ahic-card reveal delay-3" style={{ padding: "2.25rem 1.75rem", backdropFilter: "blur(4px)", borderLeft: "3px solid var(--gold)" }}>
                         <div style={{ fontSize: "1.75rem", marginBottom: ".85rem" }}></div>
@@ -115,7 +116,7 @@ export default function About() {
                         ))}
                     </div>
                     <p className="reveal" style={{ textAlign: "center", fontFamily: "var(--font-body)", fontStyle: "italic", fontSize: ".97rem", color: "var(--gold-pale)", lineHeight: 1.9, maxWidth: "600px", margin: "2rem auto 0" }}>
-                        We believe Islamic knowledge is the light that shapes confident, ethical, and purposeful individuals.
+                        We believe Quranic knowledge is the light that shapes confident, ethical, and purposeful individuals.
                     </p>
                 </div>
             </section>
@@ -149,7 +150,7 @@ export default function About() {
                             Powered by Suffah  Our Own LMS
                         </h2>
                         <p style={{ color: "var(--text-body)", fontSize: ".97rem", lineHeight: 1.85, maxWidth: "680px", margin: ".75rem auto 0" }}>
-                            AHIC runs on <strong style={{ color: "var(--cream)" }}>Suffah</strong> — a learning management system we built from scratch because no commercial platform could handle what Islamic education actually requires. Suffah is not a branded third-party tool. It is our platform, built entirely around our students&apos; needs.
+                            AHIC runs on <strong style={{ color: "var(--cream)" }}>Suffah</strong> — a learning management system we built from scratch because no commercial platform could handle what Quran education actually requires. Suffah is not a branded third-party tool. It is our platform, built entirely around our students&apos; needs.
                         </p>
                         <div className="gold-rule" style={{ margin: "1.25rem auto 0" }} />
                     </div>
@@ -159,7 +160,7 @@ export default function About() {
                             When Al Hiraa began growing from home tuitions into a structured institution, we evaluated every major LMS on the market — Teachable, Thinkific, Moodle, Google Classroom. None of them could track a student&apos;s five daily prayers, give parents real-time visibility into their child&apos;s learning, or enforce the kind of data separation that a responsible teaching institution requires.
                         </p>
                         <p style={{ fontFamily: "var(--font-body)", fontStyle: "italic", fontSize: "1rem", color: "var(--gold-pale)", lineHeight: 1.9, paddingTop: "1.5rem", borderTop: "1px solid rgba(201,168,76,.15)", textAlign: "center" }}>
-                            Suffah is not a generic LMS adapted for Islamic use  it is an Islamic education platform, first and last.
+                            Suffah is not a generic LMS adapted for Quran use  it is a Quran education platform, first and last.
                         </p>
                     </div>
 
@@ -191,8 +192,18 @@ export default function About() {
                         <Link href="/courses" className="btn-gold">View Our Courses</Link>
                         <Link href="/join" className="btn-ghost">Enroll Now</Link>
                     </div>
-                    <a href="https://instagram.com/ahicsuffah" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-body)", fontSize: ".8rem", color: "var(--text-dim)", textDecoration: "none", letterSpacing: ".05em", transition: "color .2s" }} onMouseEnter={(e) => e.currentTarget.style.color = "var(--gold)"} onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-dim)"}>
-                        📸 Instagram: @ahicsuffah
+                    <a href="https://www.instagram.com/Alhiraa.Quran" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        style={{
+                            display: "inline-flex", alignItems: "center", justifyContent: "center",
+                            width: "40px", height: "40px", borderRadius: "8px",
+                            border: "1px solid rgba(201,168,76,0.35)",
+                            transition: "all 0.2s ease", marginTop: "0.5rem"
+                        }}
+                        onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--gold)"; e.currentTarget.style.background = "rgba(201,168,76,0.15)"; e.currentTarget.style.transform = "scale(1.08)"; }}
+                        onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(201,168,76,0.35)"; e.currentTarget.style.background = "transparent"; e.currentTarget.style.transform = "scale(1)"; }}
+                    >
+                        <Image src="/instagram.png" alt="Instagram" width={24} height={24} style={{ objectFit: "contain" }} />
                     </a>
                 </div>
             </section>
