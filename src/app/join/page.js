@@ -27,7 +27,6 @@ const FAQS = [
     { q: "Are classes live or pre-recorded?", a: "All classes are fully live, conducted by qualified teachers in real time using our built-in Suffah classroom. There are no pre-recorded courses at AHIC." },
     { q: "What courses are currently running?", a: "We currently offer: Tajweed Basics - Junior, Tajweed Foundations - Senior, Qur'anic Recitation, Hifz-e-Qur'an (up to 3 Juz), and Arabic for Beginners. Qiraat, Calligraphy, and Qur'anic Tarjuma are launching shortly." },
     { q: "How do online classes work?", a: "Students join their scheduled class through the Suffah platform — our purpose-built learning system. No downloads needed. It runs in any browser on any device." },
-    { q: "Can parents monitor their child's progress?", a: "Yes. Every parent or guardian receives a dedicated Suffah Guardian account with full visibility into attendance, teacher feedback, and prayer tracking — for their child only." },
     { q: "How do I enroll or get more information?", a: "Fill in the enrollment form on this page and we'll respond within 48 hours. You can also follow us on Instagram @Alhiraa.Quran for updates and queries." },
 ];
 
