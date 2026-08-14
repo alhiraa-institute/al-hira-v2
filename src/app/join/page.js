@@ -23,7 +23,7 @@ const WHY_ITEMS = [
 ];
 
 const FAQS = [
-    { q: "Who can enroll at Al Hiraa?", a: "We welcome all learners — from young children beginning Qur'anic recitation to adults seeking structured Quranic Studies. All levels are welcome." },
+    { q: "Who can enroll at Al Hiraa?", a: "We welcome learners aged 4+ — from young children beginning Qur'anic recitation to adults seeking structured Quranic Studies. All levels are welcome." },
     { q: "Are classes live or pre-recorded?", a: "All classes are fully live, conducted by qualified teachers in real time using our built-in Suffah classroom. There are no pre-recorded courses at AHIC." },
     { q: "What courses are currently running?", a: "We currently offer: Tajweed Basics - Junior, Tajweed Foundations - Senior, Qur'anic Recitation, Hifz-e-Qur'an (up to 3 Juz), and Arabic for Beginners. Qiraat, Calligraphy, and Qur'anic Tarjuma are launching shortly." },
     { q: "How do online classes work?", a: "Students join their scheduled class through the Suffah platform — our purpose-built learning system. No downloads needed. It runs in any browser on any device." },
