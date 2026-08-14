@@ -157,7 +157,7 @@ export default function About() {
 
                     <div className="ahic-card reveal" style={{ padding: "3rem 2.5rem", borderLeft: "3px solid var(--gold)", backdropFilter: "blur(6px)", marginBottom: "2rem", maxWidth: "860px", margin: "0 auto 2rem" }}>
                         <p style={{ lineHeight: 1.95, color: "var(--text-body)", fontSize: "1rem", marginBottom: "1.25rem" }}>
-                            When Al Hiraa began growing from home tuitions into a structured institution, we evaluated every major LMS on the market — Teachable, Thinkific, Moodle, Google Classroom. None of them could track a student&apos;s five daily prayers, give parents real-time visibility into their child&apos;s learning, or enforce the kind of data separation that a responsible teaching institution requires.
+                            When Al Hiraa began growing from home tuitions into a Quran teaching centre, we evaluated every major LMS on the market — Teachable, Thinkific, Moodle, Google Classroom. None of them could track a student&apos;s five daily prayers, give parents real-time visibility into their child&apos;s learning, or enforce the kind of data separation that a responsible teaching institution requires.
                         </p>
                         <p style={{ fontFamily: "var(--font-body)", fontStyle: "italic", fontSize: "1rem", color: "var(--gold-pale)", lineHeight: 1.9, paddingTop: "1.5rem", borderTop: "1px solid rgba(201,168,76,.15)", textAlign: "center" }}>
                             Suffah is not a generic LMS adapted for Quran use  it is a Quran education platform, first and last.
