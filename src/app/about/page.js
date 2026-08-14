@@ -186,7 +186,7 @@ export default function About() {
                         Join the Al Hiraa Family
                     </h2>
                     <p style={{ color: "var(--text-body)", lineHeight: 1.95, marginBottom: "2.25rem", fontSize: "1rem" }}>
-                        Explore our five active courses or fill in the enrollment form to get started. Classes are open to students aged 4 to 25, online worldwide and offline in Mysuru.
+                        Explore our five active courses or fill in the enrollment form to get started. Classes are open to students, online worldwide and offline in Mysuru.
                     </p>
                     <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap", marginBottom: "1.5rem" }}>
                         <Link href="/courses" className="btn-gold">View Our Courses</Link>
