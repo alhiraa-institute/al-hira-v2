@@ -116,11 +116,11 @@ export default function Footer() {
                             </Link>
                         ))}
 
-                        <a href="https://www.instagram.com/Alhiraa.Quran" target="_blank" rel="noopener noreferrer" className="nav-ig-link" aria-label="Follow us on Instagram" style={{ marginTop: "0.75rem", borderRadius: "20px", padding: "6px 12px", border: "1px solid rgba(201,168,76,0.25)", gap: "0.45rem" }}>
+                        <a href="https://www.instagram.com/Alhiraa.Quran" target="_blank" rel="noopener noreferrer" className="nav-ig-link" aria-label="Follow us on Instagram" style={{ marginTop: "0.75rem" }}>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
-                                width="18" 
-                                height="18" 
+                                width="22" 
+                                height="22" 
                                 viewBox="0 0 24 24" 
                                 fill="none" 
                                 stroke="currentColor" 
@@ -133,7 +133,6 @@ export default function Footer() {
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg>
-                            <span style={{ fontSize: "0.78rem", fontWeight: 500, letterSpacing: "0.02em" }}>@Alhiraa.Quran</span>
                         </a>
                     </div>
 

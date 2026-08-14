@@ -578,18 +578,23 @@ export default function Courses() {
                                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                 </svg>
                             </a>
-                            <a href="https://www.instagram.com/Alhiraa.Quran" target="_blank" rel="noopener noreferrer"
-                                aria-label="Instagram"
-                                style={{
-                                    display: "inline-flex", alignItems: "center", justifyContent: "center",
-                                    width: "36px", height: "36px", borderRadius: "8px",
-                                    border: "1px solid rgba(201,168,76,0.3)",
-                                    transition: "all 0.2s ease",
-                                }}
-                                onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--gold)"; e.currentTarget.style.background = "rgba(201,168,76,0.15)"; e.currentTarget.style.transform = "scale(1.08)"; }}
-                                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(201,168,76,0.3)"; e.currentTarget.style.background = "transparent"; e.currentTarget.style.transform = "scale(1)"; }}
-                            >
-                                <Image src="/instagram.png" alt="Instagram" width={22} height={22} style={{ objectFit: "contain" }} />
+                            <a href="https://www.instagram.com/Alhiraa.Quran" target="_blank" rel="noopener noreferrer" className="nav-ig-link" aria-label="Follow us on Instagram">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="22"
+                                    height="22"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    className="ig-icon"
+                                >
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
                             </a>
                         </div>
                     </div>
