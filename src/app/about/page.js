@@ -19,7 +19,6 @@ function useReveal() {
 const PILLARS = [
     { icon: "📖", title: "Qur'anic Excellence", text: "From correct recitation with Tajweed to Hifz and Tarteel, every course builds a genuine relationship with the Book of Allah  not just surface-level reading." },
     { icon: "🤲", title: "Spiritual Accountability", text: "The Namaz Tracker is built into the platform. Students log their five daily prayers alongside their academic milestones  because real Quran education shapes the whole person." },
-    { icon: "👨‍👩‍👧‍👦", title: "Parental Visibility", text: "Parents receive their own Guardian account on Suffah. Attendance, prayer records, teacher feedback, and progress reports are visible in real time  for their child only." },
     { icon: "🎥", title: "Live Classes, Always", text: "Every session at AHIC is live. A real teacher, a real classroom on Suffah, and a student who can see, speak, and be seen. No pre-recorded substitutes." },
     { icon: "📈", title: "Structured Progression", text: "Each course is designed with levels and prerequisites. Students cannot skip foundations. Every stage is tracked, measured, and reported  growth is never assumed." },
     { icon: "🌍", title: "Accessible Worldwide", text: "Classes are primarily online, accessible to any student with a browser. No app to install, no tech barriers. Local students in Mysuru can also attend in person." },
