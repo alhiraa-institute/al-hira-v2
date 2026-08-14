@@ -17,7 +17,6 @@ function useReveal() {
 const WHY_ITEMS = [
     { icon: "🎥", title: "Live Classes Only", text: "Every session at AHIC is live — conducted by a real teacher using our built-in Suffah classroom with video, whiteboard, and chat. No pre-recorded videos." },
     { icon: "🤲", title: "Namaz Accountability Built In", text: "Students log their five daily prayers as part of the learning system. Spiritual growth and academic progress are tracked side by side." },
-    { icon: "👨‍👩‍👧‍👦", title: "Parent Guardian Portal", text: "Parents receive their own Suffah account with real-time visibility into attendance, prayer records, and teacher feedback — for their child only." },
     { icon: "✔️", title: "Automatic Attendance", text: "Attendance marks itself when students join a live session. No manual entry, no missed records. Both parents and teachers always know who attended." },
     { icon: "📈", title: "Structured Level Progression", text: "Each course follows a defined sequence — students advance level by level with clear prerequisites, so no foundational steps are skipped." },
     { icon: "🌍", title: "Online & Offline Access", text: "Classes run primarily online, accessible from anywhere worldwide. Local students in Mysuru can also attend in-person sessions at the Centre." },
