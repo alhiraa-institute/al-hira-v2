@@ -83,7 +83,7 @@ export default function About() {
                         <div style={{ fontSize: "1.75rem", marginBottom: ".85rem" }}></div>
                         <h3 style={{ fontFamily: "var(--font-body)", fontSize: ".82rem", fontWeight: 600, color: "var(--gold)", marginBottom: ".3rem", letterSpacing: ".06em", textTransform: "uppercase" }}>Mission</h3>
                         <p style={{ fontFamily: "var(--font-arabic)", fontSize: "1.05rem", color: "var(--gold-pale)", opacity: .65, direction: "rtl", margin: "0 0 .5rem" }}>رِسَالَتُنَا</p>
-                        <p style={{ fontSize: ".9rem", color: "var(--text-body)", lineHeight: 1.8 }}>To deliver structured, authentic Quran education through live online and offline classes, making Qur&apos;anic recitation, Hifz, Arabic, and Islamic values accessible to every student regardless of location.</p>
+                        <p style={{ fontSize: ".9rem", color: "var(--text-body)", lineHeight: 1.8 }}>To deliver structured, authentic Quran education through live online and offline classes, making Qur&apos;anic recitation, Hifz, Arabic, and Quranic values accessible to every student regardless of location.</p>
                     </div>
                     <div className="ahic-card reveal delay-3" style={{ padding: "2.25rem 1.75rem", backdropFilter: "blur(4px)", borderLeft: "3px solid var(--gold)" }}>
                         <div style={{ fontSize: "1.75rem", marginBottom: ".85rem" }}></div>
