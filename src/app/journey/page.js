@@ -40,7 +40,7 @@ const TIMELINE = [
         title: "Foundation Established",
         side: "left",
         points: [
-            "Al Hiraa Quran Coaching Centre (AHIC) was formally established on 21-04-1445 AH (6 November 2023) with organized classroom learning.",
+            "Al Hiraa Quran Coaching Centre (AHIC) was established on 21-04-1445 AH (6 November 2023) with organized classroom learning.",
         ],
     },
     {
