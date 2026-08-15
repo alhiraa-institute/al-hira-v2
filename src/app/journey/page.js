@@ -213,7 +213,7 @@ export default function Journey() {
                         The Platform Is the Promise
                     </h2>
                     <p style={{ color: "var(--text-body)", lineHeight: 2, marginBottom: "2.5rem", fontSize: ".97rem" }}>
-                        Every feature in Suffah  the Namaz Tracker, the Guardian Portal, the live classroom  exists because a real teacher showed us what education grounded in ibadah and accountability looks like. We build technology to protect and continue that model, not replace it.
+                        Every feature in Suffah — the Namaz Tracker, the live classroom — exists because a real teacher showed us what education grounded in ibadah and accountability looks like. We build technology to protect and continue that model, not replace it.
                     </p>
                     <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
                         <Link href="/courses" className="btn-gold">Explore Our Courses</Link>

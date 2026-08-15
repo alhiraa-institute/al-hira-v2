@@ -94,7 +94,7 @@ export default function Legacy() {
                         The Platform Is the Promise
                     </h2>
                     <p style={{ color: "var(--text-body)", lineHeight: 2, marginBottom: "2.5rem", fontSize: ".97rem" }}>
-                        Every feature in Suffah — the prayer tracker, the guardian portal, the live classroom — exists because
+                        Every feature in Suffah — the prayer tracker, the live classroom — exists because
                         a real teacher showed us what education grounded in ibadah and accountability looks like.
                         We are building technology to protect and continue that model, not replace it.
                     </p>
