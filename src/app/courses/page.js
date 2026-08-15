@@ -234,7 +234,7 @@ const PLATFORM_HIGHLIGHTS = [
     {
         icon: "\uD83D\uDD12",
         title: "Complete Privacy by Design",
-        text: "Four user roles \u2014 Admin, Teacher, Student, Guardian \u2014 each with strictly enforced data boundaries. Teachers see only their students. Parents see only their children. No data leaks across accounts, ever.",
+        text: "Three user roles — Admin, Teacher, Student — each with strictly enforced data boundaries. Teachers see only their students. No data leaks across accounts, ever.",
     },
 ];
 
