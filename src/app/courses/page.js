@@ -285,8 +285,8 @@ export default function Courses() {
                     </div>
                     <p className="reveal" style={{ color: "var(--text-body)", lineHeight: 1.9, fontSize: ".97rem", maxWidth: "700px", margin: "0 auto" }}>
                         Every course at Al Hiraa runs on <strong style={{ color: "var(--cream)" }}>Suffah</strong> our purpose-built learning management system.
-                        Live video classrooms, automatic attendance, prayer tracking, parent dashboards, and structured progress reporting
-                        are not add-ons. They are part of what every enrolled student and guardian gets from day one.
+                        Live video classrooms, automatic attendance, prayer tracking, and structured progress reporting
+                        are not add-ons. They are part of what every enrolled student gets from day one.
                     </p>
                 </div>
             </section>
