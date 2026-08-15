@@ -224,7 +224,7 @@ const PLATFORM_HIGHLIGHTS = [
     {
         icon: "\uD83D\uDCCA",
         title: "Attendance & Progress \u2014 Automatic",
-        text: "The moment a student joins a live session, attendance is marked. No roll call, no manual entry. Milestones, session history, and performance analytics are visible to teachers, students, and guardians \u2014 all updated live.",
+        text: "The moment a student joins a live session, attendance is marked. No roll call, no manual entry. Milestones, session history, and performance analytics are visible to teachers and students.",
     },
     {
         icon: "\uD83C\uDFD7\uFE0F",
