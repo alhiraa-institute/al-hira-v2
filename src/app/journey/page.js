@@ -45,8 +45,8 @@ const TIMELINE = [
     },
     {
         year: "2024",
-        label: "Identity & System Development",
-        title: "Identity & System Development",
+        label: "Identity & System Development (Offline)",
+        title: "Identity & System Development (Offline)",
         side: "right",
         points: [
             "Naming of AHIC and brand identity creation",
