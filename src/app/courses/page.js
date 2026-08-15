@@ -475,7 +475,7 @@ export default function Courses() {
                         }}>
                             Most online Quran education platforms are generic LMS tools with Quranic branding added.
                             Suffah was built from scratch because Quran education has specific requirements that no
-                            off-the-shelf system could meet: prayer accountability, parental visibility, and the kind
+                            off-the-shelf system could meet: prayer accountability, and the kind
                             of teacher-student trust that only structured, role-based oversight can provide.
                         </p>
                     </div>
