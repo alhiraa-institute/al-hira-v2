@@ -209,7 +209,7 @@ const PLATFORM_HIGHLIGHTS = [
     {
         icon: "\uD83C\uDFA5",
         title: "Live Classroom \u2014 No Third-Party Apps",
-        text: "Every session at AHIC is fully live, conducted inside our built-in video classroom. No Zoom links, no Google Meet, no extra installs. Students join directly through the Suffah platform \u2014 camera, microphone, and an interactive whiteboard, all in one place.",
+        text: "Every session at AHIC is fully live, conducted inside our built-in video classroom. No Zoom links, no Google Meet, no extra installs. Students join directly through the Suffah platform.",
     },
     {
         icon: "\uD83E\uDD32",
