@@ -66,7 +66,7 @@ export default function About() {
                         <strong style={{ color: "var(--cream)" }}>Al Hiraa Quran Coaching Centre</strong> is a dedicated Quran teaching platform committed to nurturing emaan, knowledge and strong moral character.
                     </p>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", maxWidth: "740px", margin: "0 auto" }}>
-                        What began as a humble initiative of home tuitions grew over more than two years into a structured Centre for Quran learning. On <strong style={{ color: "var(--cream)" }}>6 November 2023 (21/4/1445 Hijri)</strong>, we marked a milestone with the formal establishment of AHIC  and have been growing steadily ever since, alhamdulillah.
+                        What began as a humble initiative of home tuitions grew over more than two years into a structured Centre for Quran learning. On <strong style={{ color: "var(--cream)" }}>6 November 2023 (21/4/1445 Hijri)</strong>, we marked a milestone with the Offline establishment of AHIC  and have been growing steadily ever since, alhamdulillah.
                     </p>
                 </div>
 
