@@ -87,7 +87,7 @@ export default function About() {
                     <div className="ahic-card reveal delay-3" style={{ padding: "2.25rem 1.75rem", backdropFilter: "blur(4px)", borderLeft: "3px solid var(--gold)" }}>
                         <div style={{ fontSize: "1.75rem", marginBottom: ".85rem" }}></div>
                         <h3 style={{ fontFamily: "var(--font-body)", fontSize: ".82rem", fontWeight: 600, color: "var(--gold)", marginBottom: ".65rem", letterSpacing: ".06em", textTransform: "uppercase" }}>Our Name</h3>
-                        <p style={{ fontSize: ".9rem", color: "var(--text-body)", lineHeight: 1.8 }}>Al Hiraa refers to the Cave of Hira, where Prophet Muhammad ﷺ received the first revelation of the Qur&apos;an — the command to Read. Just as that revelation illuminated humanity, we aim to illuminate young minds with emaan, wisdom, and clarity.</p>
+                        <p style={{ fontSize: ".9rem", color: "var(--text-body)", lineHeight: 1.8 }}>Al Hiraa refers to the Cave of Hira, where Prophet Muhammad ﷺ received the first revelation of the Qur&apos;an — the command to Read.</p>
                     </div>
                 </div>
             </section>
