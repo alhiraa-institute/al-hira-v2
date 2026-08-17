@@ -58,12 +58,11 @@ const TIMELINE = [
     },
     {
         year: "2025",
-        label: "Academic Structuring & Digital Preparation",
-        title: "Academic Structuring & Digital Preparation",
+        label: "Class",
+        title: "Class",
         side: "left",
         points: [
-            "Structured class system and syllabus formally defined",
-            "Digital learning methods introduced and strengthened",
+            "Class system and Syllabus designed (Tajweed, Recitation, Hifz and Duas)",
         ],
     },
     {
