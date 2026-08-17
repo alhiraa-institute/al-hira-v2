@@ -49,9 +49,9 @@ const TIMELINE = [
         title: "Identity & System Development (Offline)",
         side: "right",
         points: [
-            "Naming of AHIC and brand identity creation",
+            "Naming of AHIC",
             "Logo design and centre positioning",
-            "Introduction of class activity tracking systems (Salah, Hifz, recitation tracking, etc.)",
+            "Introduction of class activity tracking systems (Salah, Hifz, recitation tracking)",
             "Student–Teacher Meetings (STM) and Parent–Teacher Meetings (PTM) initiated",
             "Rewards and recognition programs launched (Offline)",
         ],
