@@ -185,7 +185,7 @@ export default function Journey() {
                         The establishment of Al Hiraa Quran Coaching Centre was made possible through the profound generosity of Al Hajj, Al Hafiz, late Dr. Noor ul Huq Saheb. By providing the space for this Centre, he planted a seed of Sadaqah Jariyah  ongoing charity  that continues to flourish with every verse recited and every lesson learned.
                     </p>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", marginBottom: "1.75rem" }}>
-                        His life gave this institution its soul. His generosity gave it its home. Suffah, the platform we built to run has named in acknowledgement of his legacy: that sacred knowledge, properly structured, can outlast any single teacher.
+                        His life gave this Quran learning space its soul. His generosity gave it its home. Suffah, the platform we built to run has named in acknowledgement of his legacy: that sacred knowledge, properly structured, can outlast any single teacher.
                     </p>
                     <p style={{ fontFamily: "var(--font-body)", fontStyle: "italic", fontSize: "1rem", color: "var(--gold-pale)", lineHeight: 1.9, padding: "1.25rem 1.5rem", background: "rgba(201,168,76,.05)", borderRadius: "8px", border: "1px solid rgba(201,168,76,.15)" }}>
                         May Allah (SWT) have mercy upon Dr. Noor ul Huq Saheb, accept this noble act, and grant him a place in the highest ranks of Jannatul Firdaus. Ameen.
