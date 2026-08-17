@@ -78,7 +78,7 @@ function Hero() {
 
         <h1 className="section-title reveal delay-3"
           style={{ fontSize: "clamp(2.4rem, 6vw, 5.2rem)", fontWeight: 400, marginBottom: "0.75rem", letterSpacing: "0.02em" }}>
-          Igniting Hearts with Faith
+          Shining Hearts with Emaan
         </h1>
 
         <p className="reveal delay-4" style={{
@@ -96,7 +96,7 @@ function Hero() {
           maxWidth: "620px", margin: "0 auto 3rem",
         }}>
           Welcome to Al Hiraa Quran Coaching Centre — A dedicated Quran learning platform
-          nurturing faith, character, and knowledge among learners through online teaching.
+          nurturing emaan, character, and knowledge among learners through online teaching.
         </p>
 
         <div className="reveal delay-5" style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
@@ -136,7 +136,7 @@ function Hero() {
 
 /* ── Marquee ── */
 function Marquee() {
-  const text = ["Connecting Hearts", "Sharing Wisdom", "Igniting Minds", "Guiding with Light", "Nurturing Faith"];
+  const text = ["Connecting Hearts", "Sharing Wisdom", "Igniting Minds", "Guiding with Light", "Nurturing Emaan"];
   const repeated = [...text, ...text];
   return (
     <div className="glow-border-top glow-border-bottom" style={{
@@ -294,7 +294,7 @@ function CTA() {
           fontFamily: "var(--font-body)", fontSize: "1.1rem", lineHeight: 1.85,
           color: "var(--text-body)", maxWidth: "600px", margin: "0 auto 2.5rem",
         }}>
-          Join hundreds of students worldwide who are strengthening their faith and mastering the Qur&apos;an.
+          Join hundreds of students worldwide who are strengthening their emaan and mastering the Qur&apos;an.
         </p>
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
           <Link href="/join" className="btn-gold">Start Learning Today</Link>

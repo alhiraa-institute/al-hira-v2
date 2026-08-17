@@ -68,7 +68,7 @@ export default function Footer() {
                             maxWidth: "280px",
                             marginBottom: "1.5rem",
                         }}>
-                            Al Hiraa Quran Coaching Centre — nurturing faith, knowledge, and character
+                            Al Hiraa Quran Coaching Centre — nurturing emaan, knowledge, and character
                             through Quran education.
                         </p>
                         <p style={{

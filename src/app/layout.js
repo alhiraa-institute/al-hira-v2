@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "Al Hiraa Quran Coaching Centre — AHIC",
   description:
-    "Igniting Hearts with Faith, Minds with Knowledge, and Lives with Purpose. Structured Quran education for all learners.",
+    "Shining Hearts with Emaan, Minds with Knowledge, and Lives with Purpose. Structured Quran education for all learners.",
   icons: {
     icon: "/Al-hiraa.png",
     shortcut: "/Al-hiraa.png",

@@ -63,7 +63,7 @@ export default function About() {
                         Who We Are
                     </h2>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", maxWidth: "740px", margin: "0 auto 1.25rem" }}>
-                        <strong style={{ color: "var(--cream)" }}>Al Hiraa Quran Coaching Centre</strong> is a dedicated Quran teaching platform committed to nurturing faith, knowledge and strong moral character.
+                        <strong style={{ color: "var(--cream)" }}>Al Hiraa Quran Coaching Centre</strong> is a dedicated Quran teaching platform committed to nurturing emaan, knowledge and strong moral character.
                     </p>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", maxWidth: "740px", margin: "0 auto" }}>
                         What began as a humble initiative of home tuitions grew over more than two years into a structured Centre for Quran learning. On <strong style={{ color: "var(--cream)" }}>6 November 2023 (21/4/1445 Hijri)</strong>, we marked a milestone with the formal establishment of AHIC  and have been growing steadily ever since, alhamdulillah.
@@ -76,7 +76,7 @@ export default function About() {
                         <div style={{ fontSize: "1.75rem", marginBottom: ".85rem" }}></div>
                         <h3 style={{ fontFamily: "var(--font-body)", fontSize: ".82rem", fontWeight: 600, color: "var(--gold)", marginBottom: ".3rem", letterSpacing: ".06em", textTransform: "uppercase" }}>Vision</h3>
                         <p style={{ fontFamily: "var(--font-arabic)", fontSize: "1.05rem", color: "var(--gold-pale)", opacity: .65, direction: "rtl", margin: "0 0 .5rem" }}>رُؤيَتُنَا</p>
-                        <p style={{ fontSize: ".92rem", color: "var(--cream)", lineHeight: 1.8, fontStyle: "italic" }}>To ignite hearts with faith, minds with knowledge, and lives with purpose.</p>
+                        <p style={{ fontSize: ".92rem", color: "var(--cream)", lineHeight: 1.8, fontStyle: "italic" }}>To shine hearts with emaan, minds with knowledge, and lives with purpose.</p>
                     </div>
                     <div className="ahic-card reveal delay-2" style={{ padding: "2.25rem 1.75rem", backdropFilter: "blur(4px)", borderLeft: "3px solid var(--gold)" }}>
                         <div style={{ fontSize: "1.75rem", marginBottom: ".85rem" }}></div>
@@ -87,7 +87,7 @@ export default function About() {
                     <div className="ahic-card reveal delay-3" style={{ padding: "2.25rem 1.75rem", backdropFilter: "blur(4px)", borderLeft: "3px solid var(--gold)" }}>
                         <div style={{ fontSize: "1.75rem", marginBottom: ".85rem" }}></div>
                         <h3 style={{ fontFamily: "var(--font-body)", fontSize: ".82rem", fontWeight: 600, color: "var(--gold)", marginBottom: ".65rem", letterSpacing: ".06em", textTransform: "uppercase" }}>Our Name</h3>
-                        <p style={{ fontSize: ".9rem", color: "var(--text-body)", lineHeight: 1.8 }}>Al Hiraa refers to the Cave of Hira, where Prophet Muhammad ﷺ received the first revelation of the Qur&apos;an — the command to Read. Just as that revelation illuminated humanity, we aim to illuminate young minds with faith, wisdom, and clarity.</p>
+                        <p style={{ fontSize: ".9rem", color: "var(--text-body)", lineHeight: 1.8 }}>Al Hiraa refers to the Cave of Hira, where Prophet Muhammad ﷺ received the first revelation of the Qur&apos;an — the command to Read. Just as that revelation illuminated humanity, we aim to illuminate young minds with emaan, wisdom, and clarity.</p>
                     </div>
                 </div>
             </section>
@@ -103,7 +103,7 @@ export default function About() {
                     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(200px,1fr))", gap: "1rem" }}>
                         {[
                             { num: "01", label: "Knowledge", text: "Knowledge that removes ignorance" },
-                            { num: "02", label: "Faith", text: "Faith that brings peace to the heart" },
+                            { num: "02", label: "Emaan", text: "Emaan that brings peace to the heart" },
                             { num: "03", label: "Hope", text: "Hope in times of confusion and doubt" },
                             { num: "04", label: "Guidance", text: "Guidance for the heart and mind" },
                         ].map((item, i) => (
