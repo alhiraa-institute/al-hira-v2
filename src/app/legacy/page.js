@@ -65,7 +65,7 @@ export default function Legacy() {
                         <div style={{ fontSize: ".8rem", color: "var(--text-dim)", marginTop: "1rem", letterSpacing: ".08em", textTransform: "uppercase", fontStyle: "normal", fontFamily: "var(--font-body)", fontWeight: 600 }}>Dr. Noor ul Huq — Teacher, Scholar, Benefactor</div>
                     </div>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem" }}>
-                        Al Hiraa Quran Coaching Centre was founded in the spirit of Dr. Noor ul Huq — a scholar and teacher
+                        Al Hiraa Quran Coaching Academy was founded in the spirit of Dr. Noor ul Huq — a scholar and teacher
                         whose generosity made Quran education accessible to all who sought it. His life embodied what this
                         institution stands for. Suffah, the platform we built to run has named in acknowledgement
                         of his legacy: that sacred knowledge, properly structured, can outlast any single teacher.

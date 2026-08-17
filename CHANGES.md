@@ -1,11 +1,11 @@
-# Project Changes Summary — Al Hiraa Quran Coaching Centre
+# Project Changes Summary — Al Hiraa Quran Coaching Academy
 
 This document summarizes all text, branding, structural, and social media updates made to the **Al Hiraa v2** codebase.
 
 ---
 
 ## 1. Rebranding & Title Updates
-- **Name Change**: Replaced all occurrences of `"Al Hiraa Islamic Coaching Centre"` and `"Al Hiraa Islamic Centre"` with **`"Al Hiraa Quran Coaching Centre"`**.
+- **Name Change**: Replaced all occurrences of `"Al Hiraa Quran Coaching Centre"` with **`"Al Hiraa Quran Coaching Academy"`**.
 - **Files Modified**:
   - `src/app/layout.js`
   - `src/app/page.js`

@@ -38,7 +38,7 @@ const COURSES = [
         details: [
             { label: "Duration", value: "18-24 months" },
             { label: "Students per Batch", value: "3-4 only" },
-            { label: "Session Duration", value: "20 minutes" },
+            { label: "Session Duration", value: "30 minutes" },
             { label: "Class Days", value: "5 days a week" }
         ],
         ageGroup: "Ages 4 — 6",
@@ -64,7 +64,7 @@ const COURSES = [
         details: [
             { label: "Duration", value: "12-18 months" },
             { label: "Students per Batch", value: "3" },
-            { label: "Session Duration", value: "20 minutes" },
+            { label: "Session Duration", value: "30 minutes" },
             { label: "Class Days", value: "5 days a week" }
         ],
         ageGroup: "Ages 7 — 8",
@@ -83,7 +83,7 @@ const COURSES = [
             "A structured, three-tier progression system designed for students aged 9 and older. To ensure personalized attention, class sizes purposefully decrease as students advance through the levels.",
         highlights: [],
         details: [
-            { label: "Session Duration", value: "20 minutes" },
+            { label: "Session Duration", value: "30 minutes" },
             { label: "Class Days", value: "5 days a week" }
         ],
         progression: [
@@ -131,7 +131,7 @@ const COURSES = [
         ],
         details: [
             { label: "Eligibility", value: "Complete Recitation R2 or Pass Entrance Exam" },
-            { label: "Session Duration", value: "20 minutes" },
+            { label: "Session Duration", value: "30 minutes" },
             { label: "Class Days", value: "5 days a week" }
         ],
         progression: [
@@ -174,7 +174,7 @@ const COURSES = [
         details: [
             { label: "Duration", value: "12-15 months" },
             { label: "Students per Batch", value: "4-6" },
-            { label: "Weekdays or Weekends", value: "20 mins or 30 mins / session" }
+            { label: "Session Duration", value: "30 minutes" }
         ],
         ageGroup: "Ages 11+",
         level: "Beginner",
@@ -252,7 +252,7 @@ export default function Courses() {
                     <div className="page-header-blob-2" />
                 </div>
                 <div style={{ maxWidth: "760px", margin: "0 auto", padding: "0 1.5rem", position: "relative", zIndex: 1 }}>
-                    <p className="section-label" style={{ marginBottom: ".75rem" }}>Al Hiraa Quran Coaching Centre</p>
+                    <p className="section-label" style={{ marginBottom: ".75rem" }}>Al Hiraa Quran Coaching Academy</p>
                     <h1 className="section-title" style={{ fontSize: "clamp(2rem,5vw,3.5rem)", fontWeight: 400, marginBottom: ".5rem" }}>
                         Courses &amp; Programs
                     </h1>

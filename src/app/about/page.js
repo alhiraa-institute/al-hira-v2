@@ -43,7 +43,7 @@ export default function About() {
                     <div className="page-header-blob-2" />
                 </div>
                 <div style={{ maxWidth: "700px", margin: "0 auto", padding: "0 1.5rem", position: "relative", zIndex: 1 }}>
-                    <p className="section-label" style={{ marginBottom: ".75rem" }}>Al Hiraa Quran Coaching Centre</p>
+                    <p className="section-label" style={{ marginBottom: ".75rem" }}>Al Hiraa Quran Coaching Academy</p>
                     <h1 className="section-title" style={{ fontSize: "clamp(2rem,5vw,3.5rem)", fontWeight: 400, marginBottom: ".5rem" }}>
                         About AHIC
                     </h1>
@@ -63,7 +63,7 @@ export default function About() {
                         Who We Are
                     </h2>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", maxWidth: "740px", margin: "0 auto 1.25rem" }}>
-                        <strong style={{ color: "var(--cream)" }}>Al Hiraa Quran Coaching Centre</strong> is a dedicated Quran teaching platform committed to nurturing emaan, knowledge and strong moral character.
+                        <strong style={{ color: "var(--cream)" }}>Al Hiraa Quran Coaching Academy</strong> is a dedicated Quran teaching platform committed to nurturing emaan, knowledge and strong moral character.
                     </p>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", maxWidth: "740px", margin: "0 auto" }}>
                         What began as a humble initiative of home tuitions grew over more than two years into a structured Centre for Quran learning. On <strong style={{ color: "var(--cream)" }}>6 November 2023 (21/4/1445 Hijri)</strong>, we marked a milestone with the Offline establishment of AHIC  and have been growing steadily ever since, alhamdulillah.

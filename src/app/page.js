@@ -95,7 +95,7 @@ function Hero() {
           color: "var(--text-body)", lineHeight: 1.75,
           maxWidth: "620px", margin: "0 auto 3rem",
         }}>
-          Welcome to Al Hiraa Quran Coaching Centre — A dedicated Quran learning platform
+          Welcome to Al Hiraa Quran Coaching Academy — A dedicated Quran learning platform
           nurturing emaan, character, and knowledge among learners through online teaching.
         </p>
 
@@ -136,7 +136,7 @@ function Hero() {
 
 /* ── Marquee ── */
 function Marquee() {
-  const text = ["Connecting Hearts", "Sharing Wisdom", "Igniting Minds", "Guiding with Light", "Nurturing Emaan"];
+  const text = ["Connecting Hearts", "Sharing Wisdom", "Enlightening Minds", "Guiding with Light", "Nurturing Emaan"];
   const repeated = [...text, ...text];
   return (
     <div className="glow-border-top glow-border-bottom" style={{

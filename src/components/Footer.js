@@ -68,7 +68,7 @@ export default function Footer() {
                             maxWidth: "280px",
                             marginBottom: "1.5rem",
                         }}>
-                            Al Hiraa Quran Coaching Centre — nurturing emaan, knowledge, and character
+                            Al Hiraa Quran Coaching Academy — nurturing emaan, knowledge, and character
                             through Quran education.
                         </p>
                         <p style={{
@@ -153,7 +153,7 @@ export default function Footer() {
                         color: "rgba(138,128,112,0.6)",
                         letterSpacing: "0.04em",
                     }}>
-                        © 2026 Al Hiraa Quran Coaching Centre. All rights reserved.
+                        © 2026 Al Hiraa Quran Coaching Academy. All rights reserved.
                     </p>
                     <p style={{
                         fontFamily: "var(--font-arabic)",

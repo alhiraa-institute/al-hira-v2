@@ -31,7 +31,7 @@ const TIMELINE = [
         title: "A Growing Vision",
         side: "right",
         points: [
-            "Student numbers increased, and word spread through families and communities. The vision of transforming into a dedicated Quran coaching centre began to take shape.",
+            "Student numbers increased, and word spread through families and communities. The vision of transforming into a dedicated Quran coaching academy began to take shape.",
         ],
     },
     {
@@ -40,7 +40,7 @@ const TIMELINE = [
         title: "Foundation Established",
         side: "left",
         points: [
-            "Al Hiraa Quran Coaching Centre (AHIC) was established on 21-04-1445 AH (6 November 2023) with organized classroom learning.",
+            "Al Hiraa Quran Coaching Academy (AHIC) was established on 21-04-1445 AH (6 November 2023) with organized classroom learning.",
         ],
     },
     {
@@ -84,7 +84,7 @@ const LEGACY_ITEMS = [
     {
         icon: "",
         title: "A Life Devoted to Knowledge",
-        text: "Al-Hajj, Al-Hafiz late Dr. Noor Ul Huq Saheb devoted his life to the pursuit of sacred knowledge. Begining his journey of learning, understanding and after the age of 50 Memorizing the Qur'an. He spent decades immersed in its guidance and wisdom. At the age of 90, he returned to his Creator, leaving behind more than memories. He planted the seed of Al Hiraa Quran Coaching Centre (AHIC), a legacy of learning that continues to inspire and nurture generations.",
+        text: "Al-Hajj, Al-Hafiz late Dr. Noor Ul Huq Saheb devoted his life to the pursuit of sacred knowledge. Begining his journey of learning, understanding and after the age of 50 Memorizing the Qur'an. He spent decades immersed in its guidance and wisdom. At the age of 90, he returned to his Creator, leaving behind more than memories. He planted the seed of Al Hiraa Quran Coaching Academy (AHIC), a legacy of learning that continues to inspire and nurture generations.",
     },
     {
         icon: "",
@@ -99,7 +99,7 @@ const LEGACY_ITEMS = [
     {
         icon: "",
         title: "The Inspiration Behind Suffah",
-        text: "Suffah is our answer to a question he lived by: how do we make this accessible, trackable, and lasting? Technology cannot replace a teacher. But it can honour one  by making the institution he made possible, impossible to lose.",
+        text: "Suffah is our answer to a question he lived by: how do we make this accessible, trackable, and lasting? Technology cannot replace a teacher. But it can honour one  by making the quran learning space he made possible, impossible to lose.",
     },
 ];
 
@@ -182,7 +182,7 @@ export default function Journey() {
                         <p style={{ fontSize: ".78rem", color: "var(--text-dim)", letterSpacing: ".08em", textTransform: "uppercase", fontFamily: "var(--font-body)", fontWeight: 600 }}>Dr. Noor ul Huq - Mentor & Benefactor</p>
                     </div>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", marginBottom: ".75rem" }}>
-                        The establishment of Al Hiraa Quran Coaching Centre was made possible through the profound generosity of Al Hajj, Al Hafiz, late Dr. Noor ul Huq Saheb. By providing the space for this Centre, he planted a seed of Sadaqah Jariyah  ongoing charity  that continues to flourish with every verse recited and every lesson learned.
+                        The establishment of Al Hiraa Quran Coaching Academy was made possible through the profound generosity of Al Hajj, Al Hafiz, late Dr. Noor ul Huq Saheb. By providing the space for this Centre, he planted a seed of Sadaqah Jariyah  ongoing charity  that continues to flourish with every verse recited and every lesson learned.
                     </p>
                     <p style={{ lineHeight: 2, color: "var(--text-body)", fontSize: "1rem", marginBottom: "1.75rem" }}>
                         His life gave this Quran learning space its soul. His generosity gave it its home. Suffah, the platform we built to run has named in acknowledgement of his legacy: that sacred knowledge, properly structured, can outlast any single teacher.
