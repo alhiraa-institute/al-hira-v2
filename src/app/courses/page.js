@@ -216,11 +216,7 @@ const PLATFORM_HIGHLIGHTS = [
         title: "Namaz Tracker \u2014 Prayer Built Into Learning",
         text: "Suffah includes a dedicated Namaz Tracker where teachers log students’ five daily prayers — Fajr, Dhuhr, Asr, Maghrib, Isha — building spiritual accountability alongside Qur’anic knowledge.",
     },
-    {
-        icon: "\uD83D\uDC68\u200D\uD83D\uDC69\u200D\uD83D\uDC67",
-        title: "Guardian Portal \u2014 Parents Stay Informed",
-        text: "Every student\u2019s parent or guardian receives their own Suffah account. From there, they can view their child\u2019s attendance, teacher feedback, Hifz progress, and prayer records in real time \u2014 without accessing any other student\u2019s data.",
-    },
+
     {
         icon: "\uD83D\uDCCA",
         title: "Attendance & Progress \u2014 Automatic",
