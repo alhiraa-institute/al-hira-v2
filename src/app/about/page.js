@@ -25,7 +25,7 @@ const PILLARS = [
 ];
 
 const PLATFORM = [
-    { icon: "🔒", title: "No Cross-Role Data Leakage", text: "Four strictly separated roles  Admin, Teacher, Student, Guardian. By design, a teacher can only see their own students, and a parent only their own child." },
+    { icon: "🔒", title: "No Cross-Role Data Leakage", text: "Three strictly separated roles  Admin, Teacher, Student. By design, a teacher can only see their own students." },
     { icon: "📊", title: "Analytics for Every Role", text: "Admins see platform KPIs, teachers track class and student performance, students monitor their own progress." },
     { icon: "💬", title: "Bidirectional Feedback", text: "Teachers give structured feedback on students. Students rate and review teachers. Both sides are reviewed by admins  neither party can see the other's submissions directly." },
     { icon: "🗓️", title: "Smart Scheduling", text: "Classes follow RFC 5545 RRULE recurring schedules with full timezone support. Rescheduling, cancellations, and exceptions are handled without disrupting the calendar." },
